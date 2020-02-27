@@ -179,6 +179,17 @@ body {
   margin-left: 1.6rem;
 }
 
+.nav-subfooter .nav-link{
+	padding: 15px 0;
+  color: rgba(255, 255, 255, .8);
+  background-color: transparent;
+  border-bottom: .15rem solid transparent;
+} 
+
+.nav-subfooter .nav-link + .nav-link {
+  margin-left: 1.6rem;
+}
+
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
@@ -442,7 +453,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 				</div>
 				
 				<div id="subfooter">
-					<nav class="nav justify-content-center">
+					<nav class="nav justify-content-center nav-subfooter">
 					    <a class="nav-link" href="#">Impressum</a>
 					    <a class="nav-link" href="#">Datenschutz</a>
 				  </nav>
