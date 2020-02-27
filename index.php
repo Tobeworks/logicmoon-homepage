@@ -255,15 +255,24 @@ footer{
 	border-color: #353535;
 }
 
+.form-control {
+	border: 1px solid black;
+	border-radius: 0;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="url"]:focus, .textarea:focus{
+  border-color: black;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+  outline: 0 none;
+}
 </style>
 	
     
-  </head>
-  <body>
-	  
+</head>
 
+<body>
+	  
 <!-- Cover -->
-<div class="cover-container d-flex w-100 p-3 mx-auto flex-column slide-in-bck-center">
+<div class="cover-container d-flex w-100 p-4 mx-auto flex-column slide-in-bck-center">
 	<header>
 		<div>
 		  <nav class="nav nav-masthead justify-content-center float-md-right">
@@ -362,7 +371,7 @@ footer{
 				  </div>
 				  <div class="form-group">
 				    <label for="exampleFormControlTextarea1">Text</label>
-				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				    <textarea class="form-control textarea" id="exampleFormControlTextarea1" rows="3"></textarea>
 				  </div>
 				  <button type="submit" class="btn btn-lm">Submit</button>
 				</form>
