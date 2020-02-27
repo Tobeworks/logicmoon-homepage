@@ -193,6 +193,17 @@ h1 {
 	text-transform: uppercase;
 	margin: 0 0 -4% 0;
 }
+h2 {
+	font-size: 50px;
+	text-transform: uppercase;
+}
+h4 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+footer{
+	padding: 50px 0;
+}
 
 @media only screen and (max-width: 900px) {
 	#title-container{
@@ -215,49 +226,163 @@ h1 {
 	font-size: 3.5vw;
 	text-align: right;
 	width: 100%;
-/*
-	position: relative;
-	top: -50px;
-*/
 }
 
-		</style>
+.main-section{
+	min-height: 300px;
+	padding: 50px 50px;
+}
+.text{
+	font-size: 18px;
+	line-height: 35px;
+}
+
+.bg-dark {
+	background-color: #000 !important;
+}
+
+.btn-lm {
+	color: #fff;
+	background-color: #000;
+	border-color: #000;
+	border-radius: 0;
+	text-transform: uppercase;
+	min-width: 200px;
+}
+.btn-lm:hover {
+	color: #fff;
+	background-color:#353535;
+	border-color: #353535;
+}
+
+</style>
 	
     
   </head>
   <body>
 	  
 
+<!-- Cover -->
 <div class="cover-container d-flex w-100 p-3 mx-auto flex-column slide-in-bck-center">
+	<header>
+		<div>
+		  <nav class="nav nav-masthead justify-content-center float-md-right">
+		    <a class="nav-link active" aria-current="page" href="#">Home</a>
+		    <a class="nav-link" href="#">About</a>
+		    <a class="nav-link" href="#">Music</a>
+		    <a class="nav-link" href="#">Mastering</a>
+		    <a class="nav-link" href="#">Contact</a>
+		  </nav>
+		</div>
+	</header>
 	
-  <header class="">
-    <div>
-      <nav class="nav nav-masthead justify-content-center float-md-right">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#">Music</a>
-        <a class="nav-link" href="#">Mastering</a>
-        <a class="nav-link" href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main role="main" class="px-3" id="title-container">
-	<div class="overlay"></div>
-  	<div class="flicker-in-1">
-	<h1>Logic Moon</h1>
-	<div id="subheadline">music</div>
-	</div>
-  </main>
-
-
+	<main class="px-3" id="title-container">
+		<div class="overlay"></div>
+			<div class="flicker-in-1">
+		<h1>Logic Moon</h1>
+		<div id="subheadline">music</div>
+		</div>
+	</main>
 </div>
 
+<section class="main-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				<img src="img/portrait.png" alt="portrait" class="img-fluid" >
+			</div>
+			<div class="col-sm">
+				<h2 class="text-right mb-5">About</h2>
+				<p class="text text-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+					sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+					At vero eos et accusam et justo duo dolores et ea rebum. 
+					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+					At vero eos et accusam et justo duo dolores et ea rebum. 
+					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+	</div>
+</section>
 
 
-  <footer class="mt-auto text-white-50">
-  </footer>
-  
+<section class="main-section bg-light">
+	<div class="container">
+	<div class="row">
+		<div class="col-sm">
+			<h2 class="text-left mb-5">Music</h2>
+			<p class="text text-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. 
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. 
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+		</div>
+	</div>	
+</section>
+
+<section class="main-section">
+	<div class="container">
+	<div class="row">
+		<div class="col-sm">
+			<h2 class="text-right mb-5">Mastering</h2>
+			<p class="text text-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. 
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. 
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p>
+				<div class="text-right"><button type="button" class="btn btn-lm">Dark</button></div>
+			
+		</div>
+	</div>	
+</section>
+
+
+<section class="main-section">
+	<div class="container">
+	<div class="row">
+		<div class="col-sm">
+			<h2 class="text-left mb-5">Contact</h2>
+		</div>
+		<div class="col-sm">
+						<p class="text text-right">
+				<form>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Name</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlTextarea1">Text</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				  </div>
+				  <button type="submit" class="btn btn-lm">Submit</button>
+				</form>
+			</p>
+		</div>
+	</div>	
+</section>
+
+
+<!-- Footer -->
+<footer class="mt-auto text-white-50 bg-dark h-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm text-center">
+				<h4>Social Media</h4>
+			</div>
+		</div>
+	</div>
+</footer>
+
 
 
 
