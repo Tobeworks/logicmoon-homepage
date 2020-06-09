@@ -50,8 +50,8 @@
 				<img src="img/portrait.png" alt="portrait" class="img-fluid" >
 			</div>
 			<div class="col-sm">
-				<h2 class="text-right">About</h2>
-				<p class="text text-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+				<h2 class="text-xl-right">About</h2>
+				<p class="text text-xl-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 					sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 					At vero eos et accusam et justo duo dolores et ea rebum. 
 					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -93,8 +93,8 @@
 	<div class="container">
 	<div class="row">
 		<div class="col-sm">
-			<h2 class="text-right">Mastering</h2>
-			<p class="text" style="text-align:justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+			<h2 class="text-xl-right">Mastering</h2>
+			<p class="text-xl-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 				At vero eos et accusam et justo duo dolores et ea rebum. 
 				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
