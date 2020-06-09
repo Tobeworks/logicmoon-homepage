@@ -10,327 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Duru+Sans&display=swap" rel="stylesheet"> 
 	<title>Logic Moon Prepage</title>
-	
-	<style>
 
-.flicker-in-1 {
-	-webkit-animation: flicker-in-1 2s linear both;
-	        animation: flicker-in-1 2s linear both;
-} 
- 
-@keyframes flicker-in-1 {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  10.1% {
-    opacity: 1;
-  }
-  10.2% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  20.1% {
-    opacity: 1;
-  }
-  20.6% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  30.1% {
-    opacity: 1;
-  }
-  30.5% {
-    opacity: 1;
-  }
-  30.6% {
-    opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  45.1% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 1;
-  }
-  55.1% {
-    opacity: 0;
-  }
-  57% {
-    opacity: 0;
-  }
-  57.1% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  60.1% {
-    opacity: 0;
-  }
-  65% {
-    opacity: 0;
-  }
-  65.1% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  75.1% {
-    opacity: 0;
-  }
-  77% {
-    opacity: 0;
-  }
-  77.1% {
-    opacity: 1;
-  }
-  85% {
-    opacity: 1;
-  }
-  85.1% {
-    opacity: 0;
-  }
-  86% {
-    opacity: 0;
-  }
-  86.1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
 
-
-
-.slide-in-bck-center {
-	-webkit-animation: slide-in-bck-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bck-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes slide-in-bck-center {
-  0% {
-    -webkit-transform: translateZ(600px);
-            transform: translateZ(600px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-bck-center {
-  0% {
-    -webkit-transform: translateZ(600px);
-            transform: translateZ(600px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-  }
-}
-
-
-
-body {
-   font-family: 'Duru Sans';
-}
-
-.cover-container {
-   background: url(img/cover.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height:800px;
-}
-
-.nav-masthead .nav-link {
-  padding: .1rem 0;
-  font-weight: 600;
-  color: rgba(255, 255, 255, .8);
-  background-color: transparent;
-  border-bottom: .15rem solid transparent;
-  text-transform: uppercase;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1.6rem;
-}
-
-.nav-subfooter .nav-link{
-	padding: 15px 0;
-  color: rgba(255, 255, 255, .8);
-  background-color: transparent;
-  border-bottom: .15rem solid transparent;
-} 
-
-.nav-subfooter .nav-link + .nav-link {
-  margin-left: 1.6rem;
-}
-
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-#title-container{
-	color: white;
-	margin: 15% auto;
-}
-h1 {
-	font-size: 12vw;
-	text-transform: uppercase;
-	margin: 0 0 -4% 0;
-}
-h2 {
-	font-size: 50px;
-	text-transform: uppercase;
-}
-h4 {
-	font-size: 30px;
-	text-transform: uppercase;
-}
-footer{
-	padding: 50px 0;
-}
-
-
-
-.overlay {
-	background-color: #000;
-	opacity: 0.5;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
-	border-radius: 6px;
-}
-#subheadline{
-	font-size: 3.5vw;
-	text-align: right;
-	width: 100%;
-}
-
-.main-section{
-	min-height: 300px;
-	padding: 50px 50px;
-}
-.text{
-	font-size: 18px;
-	line-height: 35px;
-}
-
-.bg-dark {
-	background-color: #000 !important;
-}
-
-.btn-lm {
-	color: #fff;
-	background-color: #000;
-	border-color: #000;
-	border-radius: 0;
-	text-transform: uppercase;
-	min-width: 200px;
-}
-.btn-lm:hover {
-	color: #fff;
-	background-color:#353535;
-	border-color: #353535;
-}
-
-.form-control {
-	border: 1px solid black;
-	border-radius: 0;
-}
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="url"]:focus, .textarea:focus{
-  border-color: black;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
-  outline: 0 none;
-}
-#contact-form{
-	margin-top: 80px;
-}
-
-#social-icons{		
-	padding: 20px;
-}
-#social-icons svg{		
-		width: 60px;
-		margin: 4px;
-		overflow: visible;
-		transform: matrix(1,0,0,1,0,0);
-}
-
-
-@media only screen and (max-width: 900px) {
-	
-	.cover-container {
-  height:600px;
-}
-#contact-form{
-	margin-top: 0px;
-}
-	h2 {
-		font-size: 40px;
-		text-transform: uppercase;
-	}
-	h4 {
-		font-size: 20px;
-		text-transform: uppercase;
-	}
-	
-	h1, h2, h3, h4{
-		margin-top: 25px;
-	}
-	
-	#social-icons svg{		
-		width: 30px;
-	}
-	
-	#title-container{
-		margin-top:200px;
-	}
-	.text{
-		font-size: 13px;
-		line-height: 25px;
-	}
-}
-
-@media only screen and (max-width: 450px) {
-	h1 {
-	font-size: 42px;
-	text-transform: uppercase;
-	margin: 15px 0 0 0;
-}
-}
-
-
-</style>
-	
     
 </head>
 
@@ -399,7 +83,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 				<div>
 					<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/996748963&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 				</div>
-				<div class="text-left"><button type="button" class="btn btn-lm">More Music</button></div>
+				<div class="text-sm-center text-md-left"><button type="button" class="btn btn-lm">More Music</button></div>
 		</div>
 	</div>	
 	</div>
@@ -418,7 +102,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 				At vero eos et accusam et justo duo dolores et ea rebum. 
 				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 				</p>
-				<div class="text-right"><button type="button" class="btn btn-lm">Projects</button></div>
+				<div class="text-sm-center text-md-right"><button type="button" class="btn btn-lm">Projects</button></div>
 			
 		</div>
 	</div>	
@@ -552,5 +236,17 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  
+      <script>
+		$(document).ready(
+		function(){
+			let vp_height = $(window).height();
+			if(vp_height > 650){
+				$('.cover-container').css('height',vp_height);
+			}
+		}
+		);    
+	</script>
   </body>
 </html>
