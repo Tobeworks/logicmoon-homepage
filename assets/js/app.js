@@ -5,4 +5,6 @@ $(document).ready(
             $('.cover-container').css('height',vp_height);
         }
     }
+    
 ); 
+

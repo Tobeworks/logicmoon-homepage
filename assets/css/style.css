@@ -110,14 +110,14 @@ footer{
 	background-color:#353535;
 	border-color: #353535;
 }
-
 .btn-hamburger {
-	color: #fff;
-	background-color:transparent;
-	border-radius: 0;
-	border:0;
+	color: #000;
+	background-color: #4c4c4c;
+	opacity: 0.5;
+	border-radius: 6px;
+	border: 0;
 	margin: 10px;
-	padding:5px;
+	padding: 5px;
 }
 btn-hamburger:hover {
 	color: #eee;
@@ -147,15 +147,15 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 #hamburger-nav-block {
-	position: sticky;
-	top: 15px;
-	background-color: transparent;
-	z-index: 999;
-	height: 0px;
-	/* left: 150px; */
 	mix-blend-mode: difference;
 }
-
+#hamburger-nav-sticky{
+	background-color: transparent;
+	position: sticky;
+	top: 15px;
+	z-index: 999;
+	height: 0px;
+}
 @media only screen and (max-width: 900px) {
 	
 	.cover-container {
@@ -192,7 +192,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 @media only screen and (max-width: 450px) {
 	h1 {
-	font-size: 42px;
+	font-size: 40px;
 	text-transform: uppercase;
 	margin: 15px 0 0 0;
 }
