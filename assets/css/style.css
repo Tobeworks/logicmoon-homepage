@@ -77,7 +77,6 @@ footer{
 	bottom: 0;
 	right: 0;
 	z-index: -1;
-	border-radius: 6px;
 }
 #subheadline{
 	font-size: 3.5vw;
@@ -112,6 +111,18 @@ footer{
 	border-color: #353535;
 }
 
+.btn-hamburger {
+	color: #fff;
+	background-color:transparent;
+	border-radius: 0;
+	border:0;
+	margin: 10px;
+	padding:5px;
+}
+btn-hamburger:hover {
+	color: #eee;
+}
+
 .form-control {
 	border: 1px solid black;
 	border-radius: 0;
@@ -135,6 +146,15 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 		transform: matrix(1,0,0,1,0,0);
 }
 
+#hamburger-nav-block {
+	position: sticky;
+	top: 15px;
+	background-color: transparent;
+	z-index: 999;
+	height: 0px;
+	/* left: 150px; */
+	mix-blend-mode: difference;
+}
 
 @media only screen and (max-width: 900px) {
 	

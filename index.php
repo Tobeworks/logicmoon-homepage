@@ -14,10 +14,17 @@
     <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
+
+<div class="d-flex justify-content-end d-md-none" id="hamburger-nav-block">
+	<button class="btn btn-hamburger" id="hamburger-nav-button">
+		<svg width="2.5em" height="2.5em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-list text-light" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+		</svg>
+	</button>
+</div>
 <!-- Cover -->
-<div  class="cover-container d-flex w-100 p-4 mx-auto flex-column slide-in-bck-center">
-	<header>
-		<div>
+<section  class="cover-container d-flex w-100 px-3 py-3 mx-auto flex-column slide-in-bck-center">
+<header>
 		  <nav class="nav nav-masthead justify-content-center float-md-right  d-none d-sm-inline-flex d-md-inline-flex">
 		    <a class="nav-link active" aria-current="page" href="#">Home</a>
 		    <a class="nav-link" href="#">About</a>
@@ -25,7 +32,7 @@
 		    <a class="nav-link" href="#">Mastering</a>
 		    <a class="nav-link" href="#">Contact</a>
 		  </nav>
-		</div>
+
 	</header>
 	
 	<div class="px-3" id="title-container">
@@ -35,7 +42,7 @@
 			<div id="subheadline" class="d-none d-sm-block">music</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <section class="main-section">
 	<div class="container">
@@ -225,6 +232,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>	
 	<script src="assets/js/app.js"></script>
   </body>
 </html>
