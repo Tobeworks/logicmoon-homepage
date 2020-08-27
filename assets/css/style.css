@@ -30,7 +30,9 @@ body {
 }
 
 .nav-subfooter .nav-link{
-	padding: 15px 0;
+font-size:0.8em;
+  text-transform: uppercase;
+  padding: 5px 0;
   color: rgba(255, 255, 255, .8);
   background-color: transparent;
   border-bottom: .15rem solid transparent;
@@ -160,7 +162,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	background-color: transparent;
 	position: sticky;
 	top: 15px;
-	z-index: 999;
+	z-index: 10;
 	height: 0px;
 }
 @media only screen and (max-width: 900px) {
@@ -203,4 +205,79 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	text-transform: uppercase;
 	margin: 75px 0 0 0;
 }
+}
+
+
+
+.overlay-menu {
+	background:rgb(78, 78, 78);
+	opacity: 0.95;
+
+	width:100%;
+
+	height: 100%;
+	width: 100%;
+	position: fixed; /* Stay in place */
+	z-index: 20; /* Sit on top */
+	left: 0;
+	top: 0;
+	background-color: rgb(0,0,0); /* Black fallback color */
+	background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	transition: 0.5s; 
+}
+.overlay-middle{
+
+		height: 200px;
+		width: 40%;
+		/* background: yellow; */
+		margin: auto;
+		top: 25%;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+		/* color: white; */
+}
+.overlay-middle .nav-link{
+	color: white;
+}
+.overlay-close{
+	top: 15px;
+	position: relative;
+	color: white;
+	text-align: right;
+	margin: 25px;
+}
+
+.menu ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.menu ul li {
+	color:#333;
+	font-size:12px;
+	letter-spacing:2px;
+	padding:15px 0;
+	text-transform:uppercase;
+}
+.menu ul li:hover {
+	background:#e9e9e9;
+}
+.menu a {
+  text-decoration:none;
+	color: #333;
+}
+.menu-toggle {
+	background:none;
+  color: #333;
+	width:100%;
+	text-align:center;
+	padding:10px 0;
+	font-size:25px;
+}
+.menu-toggle a {
+	text-decoration:none;
+	color: #333;
 }

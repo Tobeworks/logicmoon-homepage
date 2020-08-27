@@ -8,3 +8,8 @@ $(document).ready(
     
 ); 
 
+$(document).ready(function(){
+    $("#hamburger-nav-button, .nav-link").click(function(){ 
+        $(".menu").slideToggle( "slow" );
+    });
+});
