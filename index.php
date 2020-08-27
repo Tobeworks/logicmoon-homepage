@@ -18,7 +18,7 @@
 <div class="d-flex justify-content-end d-md-none" id="hamburger-nav-sticky">
 	<div id="hamburger-nav-block">
 	<button class="btn btn-hamburger" id="hamburger-nav-button">
-		<svg width="2.5em" height="2.5em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-list text-light" xmlns="http://www.w3.org/2000/svg">
+		<svg width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-list text-light" xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
 		</svg>
 	</button>
