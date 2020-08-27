@@ -26,8 +26,8 @@
 </div>
 <!-- Cover -->
 <section  class="cover-container d-flex w-100 px-3 py-3 mx-auto flex-column slide-in-bck-center">
-<header>
-		  <nav class="nav nav-masthead justify-content-center float-md-right  d-none d-sm-inline-flex d-md-inline-flex">
+<header class="d-none d-sm-block d-md-block">
+		  <nav class="nav nav-masthead justify-content-center">
 		    <a class="nav-link active" aria-current="page" href="#">Home</a>
 		    <a class="nav-link" href="#">About</a>
 		    <a class="nav-link" href="#">Music</a>
@@ -54,7 +54,7 @@
 			</div>
 			<div class="col-sm">
 				<h2 class="text-xl-right">About</h2>
-				<p class="text text-xl-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+				<p class="text text-xl-right text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 					sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 					At vero eos et accusam et justo duo dolores et ea rebum. 
 					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -97,7 +97,7 @@
 	<div class="row">
 		<div class="col-sm">
 			<h2 class="text-xl-right">Mastering</h2>
-			<p class="text-xl-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+			<p class="text-xl-right text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 				At vero eos et accusam et justo duo dolores et ea rebum. 
 				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
