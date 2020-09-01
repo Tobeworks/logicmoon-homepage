@@ -113,6 +113,7 @@ footer{
 	background-color:#353535;
 	border-color: #353535;
 }
+
 .btn-hamburger {
 	color: #000;
 	background-color: #4c4c4c;
@@ -155,7 +156,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 		transform: matrix(1,0,0,1,0,0);
 }
 
-#hamburger-nav-block {
+.button-nav-block {
 	mix-blend-mode: difference;
 }
 #hamburger-nav-sticky, #overlay-close{
