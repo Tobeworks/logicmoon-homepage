@@ -17,21 +17,25 @@
 
 
 
-<div class="overlay-menu">
-<div class="overlay-close"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-  <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
-  <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
-</svg></div>
-<div class="overlay-middle">
-<nav class="nav flex-column">
-		    <a class="nav-link active" aria-current="page" href="#">Home</a>
-		    <a class="nav-link" href="#">About</a>
-		    <a class="nav-link" href="#">Music</a>
-		    <a class="nav-link" href="#">Mastering</a>
-		    <a class="nav-link" href="#">Contact</a>
-		  </nav>
-</div>
+<div id="overlay-menu">
+	<div class="d-flex justify-content-end d-md-none"  id="overlay-close">
+		<button class="btn btn-hamburger" id="overlay-close-button">
+			<svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+				<path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+				<path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+			</svg>
+		</button>
+	</div>
+	<div class="overlay-middle">
+	<nav class="nav flex-column">
+				<a class="nav-link active" aria-current="page" href="#">Home</a>
+				<a class="nav-link" href="#">About</a>
+				<a class="nav-link" href="#">Music</a>
+				<a class="nav-link" href="#">Mastering</a>
+				<a class="nav-link" href="#">Contact</a>
+			</nav>
+	</div>
 </div>
 
 <div class="d-flex justify-content-end d-md-none" id="hamburger-nav-sticky">
@@ -43,6 +47,8 @@
 	</button>
 	</div>
 </div>
+
+
 <!-- Cover -->
 <section  class="cover-container d-flex w-100 px-3 py-3 mx-auto flex-column slide-in-bck-center">
 <header class="d-none d-sm-block d-md-block">
