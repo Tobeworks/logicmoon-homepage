@@ -74,7 +74,7 @@
 </section>
 
 <section class="main-section">
-	<div class="container">
+<div class="container">
 		<div class="row">
 			<div class="col-sm">
 				<img src="assets/img/portrait.png" alt="portrait" class="img-fluid" >
@@ -90,11 +90,11 @@
 					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 			</div>
 		</div>
-	</div>
+</div>
 </section>
 
 
-<section class="main-section bg-light">
+<section class="main-section bg-dark">
 	<div class="container">
 	<div class="row">
 		<div class="col-sm">
@@ -119,6 +119,7 @@
 	</div>
 </section>
 
+
 <section class="main-section">
 	<div class="container">
 	<div class="row">
@@ -140,7 +141,7 @@
 </section>
 
 
-<section class="main-section bg-light">
+<section class="main-section bg-dark">
 	<div class="container">
 	<div class="row">
 		<div class="col-sm">
@@ -165,6 +166,26 @@
 				  <button type="submit" class="btn btn-lm">Submit</button>
 				</form>
 
+		</div>
+	</div>	
+	</div>
+</section>
+
+<section class="main-section">
+	<div class="container">
+	<div class="row">
+		<div class="col-sm">
+			<h2 class="text-xl-right">Mastering</h2>
+			<p class="text-xl-right text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. 
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. 
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p>
+				<div class="text-sm-center text-md-right"><button type="button" class="btn btn-lm">Projects</button></div>
+			
 		</div>
 	</div>	
 	</div>
