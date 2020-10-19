@@ -31,7 +31,7 @@
 	
 	<div class="overlay-middle">
 	<nav class="nav flex-column">
-				<a class="nav-link active" aria-current="page" href="#">Home</a>
+				<a class="nav-link active" href="#">Home</a>
 				<a class="nav-link" href="#">About</a>
 				<a class="nav-link" href="#">Music</a>
 				<a class="nav-link" href="#">Mastering</a>
