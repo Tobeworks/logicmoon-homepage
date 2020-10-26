@@ -2,12 +2,16 @@ body {
     font-family: 'Duru Sans';
 }
 
+a,
+a:hover {
+    color: black;
+    font-weight: 500;
+}
+
 .cover-container {
-    background: url(../img/cover.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(/assets/img/resize_cover.jpg);
     background-size: cover;
+    background-color: black;
     height: 800px;
 }
 
@@ -335,4 +339,18 @@ input[type="url"]:focus,
 
 #footer {
     background-color: #000;
+}
+
+.reverse {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.modal-dialog {
+    border-radius: 0;
+    max-width: 800px;
+}
+
+.modal-content {
+    border-radius: 0;
 }

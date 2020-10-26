@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     let vp_height = $(window).height();
-    if (vp_height > 650) {
+    if (vp_height > 500) {
         $('.cover-container').css('height', vp_height);
     }
 
@@ -20,10 +20,9 @@ $(document).ready(function() {
         $('#hamburger-nav-button').fadeIn(500);
     });
 
-});
-
-
-//init barba
-barba.init({
+    $('#contact-form').submit(function() {
+        console.log($(this).serialize());
+        return false;
+    });
 
 });
