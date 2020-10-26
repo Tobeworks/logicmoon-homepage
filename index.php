@@ -120,7 +120,7 @@ Compositions typically start life as a sketch on guitar before synth and additio
 			<h2 class="text-xl-right">Mastering</h2>
 			<p class="text-xl-right text-justify">Login Moon is well known for his mastering and postproduction for internationally known labels like Whitelabrecs, Dronarivm, Seasides on Postcards, Archives and many artist all over the globe.
 				</p>
-				<div class="text-sm-center text-md-right"><button type="button" class="btn btn-lm">Projects</button></div>
+				<!-- <div class="text-sm-center text-md-right"><button type="button" class="btn btn-lm">Projects</button></div> -->
 			
 		</div>
 	</div>	
@@ -162,15 +162,9 @@ Compositions typically start life as a sketch on guitar before synth and additio
 	<div class="row">
 		<div class="col-sm">
 			<h2 class="text-xl-right">Discography</h2>
-			<p class="text-xl-right text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-				At vero eos et accusam et justo duo dolores et ea rebum. 
-				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-				At vero eos et accusam et justo duo dolores et ea rebum. 
-				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-				<div class="text-sm-center text-md-right"><button type="button" class="btn btn-lm">Projects</button></div>
+			<p class="text-xl-right text-justify">
+				Coming soon...
+			</div>
 			
 		</div>
 	</div>	
