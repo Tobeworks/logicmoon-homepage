@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-	<meta name="description" content="The Homepage of Logic Moon Music">
-	<meta name="keywords" content="Logic Moon, Tobias Lorsbach, ambient, Drone, Neoclassical, Texture, music">
+	<meta name="description" content="Home of Logic Moon Music">
+	<meta name="keywords" content="Logic Moon, Tobias Lorsbach, Ambient, Drone, Neoclassical, Texture, music">
 	<meta name="author" content="Tobias Lorsbach">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">	<link href="https://fonts.googleapis.com/css?family=Duru+Sans&display=swap" rel="stylesheet"> 
-	<title>Logic Moon Prepage</title>
+	<title>Logic Moone</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animate.css">
 </head>
@@ -30,12 +30,12 @@
 	</div>
 	
 	<div class="overlay-middle">
-	<nav class="nav flex-column">
+	<nav class="nav flex-column" id="fullscreen-menu">
 				<a class="nav-link active" href="#">Home</a>
-				<a class="nav-link" href="#">About</a>
-				<a class="nav-link" href="#">Music</a>
-				<a class="nav-link" href="#">Mastering</a>
-				<a class="nav-link" href="#">Contact</a>
+				<a class="nav-link" href="#about">About</a>
+				<a class="nav-link" href="#music">Music</a>
+				<a class="nav-link" href="#mastering">Mastering</a>
+				<a class="nav-link" href="#contact">Contact</a>
 			</nav>
 	</div>
 </div>
@@ -56,10 +56,10 @@
 <header class="d-none d-sm-block d-md-block">
 		  <nav class="nav nav-masthead justify-content-center">
 		    <a class="nav-link active" aria-current="page" href="#">Home</a>
-		    <a class="nav-link" href="#">About</a>
-		    <a class="nav-link" href="#">Music</a>
-		    <a class="nav-link" href="#">Mastering</a>
-		    <a class="nav-link" href="#">Contact</a>
+		    <a class="nav-link" href="#about">About</a>
+		    <a class="nav-link" href="#music">Music</a>
+		    <a class="nav-link" href="#mastering">Mastering</a>
+		    <a class="nav-link" href="#contact">Contact</a>
 		  </nav>
 
 	</header>
@@ -73,7 +73,7 @@
 	</div>
 </section>
 
-<section class="main-section">
+<section class="main-section" id="about">
 <div class="container">
 		<div class="row">
 			<div class="col-sm">
@@ -81,20 +81,19 @@
 			</div>
 			<div class="col-sm">
 				<h2 class="text-xl-right">About</h2>
-				<p class="text text-xl-right text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-					sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+				<p class="text text-xl-right text-justify">
+				Logic Moon is Tobias Lorsbach, an artist from Mainz, Germany. His previous releases have appeared on labels such as Archives, Archipel and his own spontanMusik imprint across all physical and digital formats. He spent many years in the minimal techno scenes since the early 2000s and whilst out on a field recording excursion, he fell upon the idea of layering some Ambient drones. From here, his debut album as Logic Moon was born.
+<br><br>
+Tobias’ musical background has drawn in a widescreen of genres with him having performed guitar in a death metal band, embarked on a DJ career and now as an Ambient musician. His varied experiences have only served to give birth to a range of ideas which are evident in his latest album ‘I See Planets’, clocking in at just over an hour.
+Compositions typically start life as a sketch on guitar before synth and additional components were added to build an environment. </p>
 			</div>
 		</div>
 </div>
 </section>
 
 
-<section class="main-section bg-dark">
+<section class="main-section bg-dark" id="music">
+<div class="overlay"></div>
 	<div class="container">
 	<div class="row">
 		<div class="col-sm">
@@ -120,7 +119,7 @@
 </section>
 
 
-<section class="main-section">
+<section class="main-section" id="mastering">
 	<div class="container">
 	<div class="row">
 		<div class="col-sm">
@@ -141,7 +140,7 @@
 </section>
 
 
-<section class="main-section bg-dark">
+<section class="main-section bg-dark" id="contact">
 	<div class="container">
 	<div class="row">
 		<div class="col-sm">
@@ -193,7 +192,7 @@
 
 
 <!-- Footer -->
-<footer class="mt-auto text-white-50 bg-dark h-100">
+<footer class="mt-auto text-white-50 h-100" id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm text-center">
@@ -282,8 +281,8 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>	
+<!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>	 -->
 <script src="assets/js/app.js"></script>
 </body>
 </html>
