@@ -151,7 +151,7 @@ Compositions typically start life as a sketch on guitar before synth and additio
 				  </div>
 				  <button type="submit" class="btn btn-lm">Send me a message</button>
 				</form>
-
+				<div class="alert alert-light m-3" role="alert" id="mail-alert" style="display: none;"></div>
 		</div>
 	</div>	
 	</div>

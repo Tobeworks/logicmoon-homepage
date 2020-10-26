@@ -21,7 +21,16 @@ $(document).ready(function() {
     });
 
     $('#contact-form').submit(function() {
-        console.log($(this).serialize());
+
+        $.post("sendmail.php", $(this).serialize(), function(data) {
+            if (data == 'true') {
+                $('#mail-alert').html('Your Mail was succesfully sent').fadeIn(500);
+            } else {
+                $('#mail-alert').html('There was an error').fadeIn(500);
+            }
+        });
+
+
         return false;
     });
 
