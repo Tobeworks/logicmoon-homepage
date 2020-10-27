@@ -14,6 +14,27 @@
 	<title>Logic Moon</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- Matomo -->
+	<script type="text/javascript">
+		var _paq = window._paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u = "//matomo.tobeworks.de/";
+			_paq.push(['setTrackerUrl', u + 'piwik.php']);
+			_paq.push(['setSiteId', '2']);
+			var d = document,
+				g = d.createElement('script'),
+				s = d.getElementsByTagName('script')[0];
+			g.type = 'text/javascript';
+			g.async = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore(g, s);
+		})();
+	</script>
+	<!-- End Matomo Code -->
+
 </head>
 
 <body data-barba="wrapper">
@@ -104,17 +125,18 @@
 					<h2 class="text-left">Music</h2>
 					<p class="text text-left">To date, 8 albums, 8 EPs and singles and various contributions on compilations have been released on international labels. In addition, there are various contributions and productions in the film and advertising sector.</p>
 					<div>
-						<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1144906126&color=%2318120b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+						<iframe height="450" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1144906126&color=%2318120b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 						<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Duru Sans,sans-serif;font-weight: 100;">
-						<a href="https://soundcloud.com/logic-moon" title="Logic Moon" target="_blank" style="color: #cccccc; text-decoration: none;">Logic Moon</a> · <a href="https://soundcloud.com/logic-moon/sets/coherence-ep" title="Coherence EP" target="_blank" style="color: #cccccc; text-decoration: none;">Coherence EP</a></div>
+							<a href="https://soundcloud.com/logic-moon" title="Logic Moon" target="_blank" style="color: #cccccc; text-decoration: none;">Logic Moon</a> · <a href="https://soundcloud.com/logic-moon/sets/coherence-ep" title="Coherence EP" target="_blank" style="color: #cccccc; text-decoration: none;">Coherence EP</a></div>
 					</div>
 
 					<div>
-					<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/924081535&color=%23221f1f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+						<iframe height="450" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/924081535&color=%23221f1f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 						<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/logic-moon" title="Logic Moon" target="_blank" style="color: #cccccc; text-decoration: none;">Logic Moon</a> · <a href="https://soundcloud.com/logic-moon/sets/i-see-planets" title="I See Planets" target="_blank" style="color: #cccccc; text-decoration: none;">I See Planets</a></div>
 					</div>
 					<div>
-					<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1108115182&color=%23090908&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/logic-moon" title="Logic Moon" target="_blank" style="color: #cccccc; text-decoration: none;">Logic Moon</a> · <a href="https://soundcloud.com/logic-moon/sets/phoenix-lp-2019" title="Phoenix - LP - 2019" target="_blank" style="color: #cccccc; text-decoration: none;">Phoenix - LP - 2019</a></div>
+						<iframe height="450" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1108115182&color=%23090908&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+						<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/logic-moon" title="Logic Moon" target="_blank" style="color: #cccccc; text-decoration: none;">Logic Moon</a> · <a href="https://soundcloud.com/logic-moon/sets/phoenix-lp-2019" title="Phoenix - LP - 2019" target="_blank" style="color: #cccccc; text-decoration: none;">Phoenix - LP - 2019</a></div>
 					</div>
 					<!-- <div class="text-sm-center text-md-left"><button type="button" class="btn btn-lm">More Music</button></div> -->
 				</div>
@@ -175,9 +197,7 @@
 					<p class="text-xl-right text-justify">
 						Coming soon...
 				</div>
-
 			</div>
-		</div>
 		</div>
 	</section>
 
