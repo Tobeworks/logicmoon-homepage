@@ -1,5 +1,4 @@
 <?php
-
 $empfaenger  = 'hallo@tobeworks.de';
 
 // Betreff
@@ -19,13 +18,13 @@ $nachricht = '
 </html>
 ';
 
-$text = sprintf($nachricht,$_POST['message']);
+$text = sprintf($nachricht,filter_var(addslashes($_POST['message'])));
 
 // für HTML-E-Mails muss der 'Content-type'-Header gesetzt werden
 $header[] = 'MIME-Version: 1.0';
 $header[] = 'Content-type: text/html; charset=utf-8';
 
-$header[] = 'From: '.$_POST['name'].' <'.$_POST['email'].'>';
+$header[] = 'From: '.filter_var(addslashes($_POST['name'])).' <'.filter_var(addslashes($_POST['email'])).'>';
 
 
 // verschicke die E-Mail
