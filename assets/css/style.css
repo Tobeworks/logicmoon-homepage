@@ -1,7 +1,12 @@
+:root{
+    --main-dark : #000;
+}
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'Duru Sans', sans-serif;
 }
-
 a,
 a:hover {
     color: black;
