@@ -12,7 +12,10 @@ a:hover {
     color: black;
     font-weight: 500;
 }
-
+iframe{
+    width: 100%;
+    height: 400px;
+}
 .cover-container {
     background: url(/assets/img/resize_cover.jpg);
     background-size: cover;
