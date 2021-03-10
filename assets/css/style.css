@@ -7,6 +7,9 @@ html {
 body {
     font-family: 'Duru Sans', sans-serif;
 }
+iframe{
+    border: 0;
+}
 a,
 a:hover {
     color: black;
@@ -195,7 +198,32 @@ input[type="url"]:focus,
     height: 0px;
 }
 
+:root{
+    --isogridsize:200px;
+    --isogridsize-mobile:140px;
+}
+
+.grid{
+    margin: auto;
+}
+.grid-item>img { width: var(--isogridsize); height: var(--isogridsize);}
+
+.grid-item {
+    float: left;
+    width: var(--isogridsize);
+    height:var(--isogridsize);
+  }
+
 @media only screen and (max-width: 900px) {
+    
+    .grid-item>img { width: var(--isogridsize-mobile); height: var(--isogridsize-mobile);}
+
+    .grid-item {
+        float: left;
+        width: var(--isogridsize-mobile);
+        height:var(--isogridsize-mobile);
+      }
+    
     .cover-container {
         height: 600px;
     }

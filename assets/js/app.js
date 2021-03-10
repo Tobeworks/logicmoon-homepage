@@ -1,4 +1,11 @@
-$(document).ready(function() {
+$(function() {
+
+    $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+      });
+
 
     let vp_height = $(window).height();
     if (vp_height > 500) {
@@ -34,4 +41,18 @@ $(document).ready(function() {
         return false;
     });
 
+
+    $('.grid').isotope({
+        sortBy: 'year',
+        sortAscending: false,
+        itemSelector: '.grid-item',
+        layoutMode: 'masonry',
+        masonry: {
+            columnWidth: 50
+          }
+    });
+
+
+
 });
+

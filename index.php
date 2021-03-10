@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 
 <head>
 	<meta charset="utf-8">
@@ -122,7 +122,7 @@
 					<p class="text text-left">To date, 8 albums, 8 EPs and singles and various contributions on compilations have been released on international labels. In addition, there are various contributions and productions in the film and advertising sector.</p>
 
 <div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/M9a4VS4Sxz8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M9a4VS4Sxz8"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 					<div>
@@ -195,7 +195,26 @@
 				<div class="col-sm">
 					<h2 class="text-xl-right">Discography</h2>
 					<p class="text-xl-right text-justify">
-						Coming soon...
+					<div class="grid">
+					<div class="static-banner">Static banner</div>
+							<div class="grid-item" data-year="2012"><img src="assets/img/covers/2011.jpg"  ></div>
+							<div class="grid-item" data-year="2013"><img src="assets/img/covers/altrhein.jpg"  ></div>
+							<div class="grid-item" data-year="2014"><img src="assets/img/covers/quitecity.jpg"  ></div>
+							<div class="grid-item" data-year="2016"><img src="assets/img/covers/oblivion.jpg"  ></div>
+							<div class="grid-item" data-year="2016"><img src="assets/img/covers/groundzero.jpg"  ></div>
+							<div class="grid-item" data-year="2017"><img src="assets/img/covers/cascadian.jpg"  ></div>
+							<div class="grid-item" data-year="2018"><img src="assets/img/covers/pheni1.jpg"  ></div>
+							<div class="grid-item" data-year="2018"><img src="assets/img/covers/pheni2.jpg"  ></div>
+							<div class="grid-item" data-year="2018"><img src="assets/img/covers/pheni3.jpg"  ></div>
+							<div class="grid-item" data-year="2019"><img src="assets/img/covers/phoenix.jpg"  ></div>
+							<div class="grid-item" data-year="2019"><img src="assets/img/covers/iseeplanets.jpg"  ></div>
+							<div class="grid-item" data-year="2019"><img src="assets/img/covers/tales.jpg"  ></div>
+							<div class="grid-item" data-year="2020"><img src="assets/img/covers/2017.jpg"  ></div>
+							<div class="grid-item" data-year="2020"><img src="assets/img/covers/coherence.jpg"  ></div>
+							<div class="grid-item" data-year="2021"><img src="assets/img/covers/starmapping.jpg"  ></div>
+
+					</div>
+
 				</div>
 
 			</div>
@@ -465,6 +484,7 @@
 	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="./node_modules/popper.js/dist/popper.min.js"></script>
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
 	<!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>	 -->
 	<script src="assets/js/app.js"></script>
