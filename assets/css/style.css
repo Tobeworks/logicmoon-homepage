@@ -200,11 +200,13 @@ input[type="url"]:focus,
 
 :root{
     --isogridsize:200px;
-    --isogridsize-mobile:140px;
+    --isogridsize-sm:140px;
+    --isogridsize-xs:100px;
 }
 
 .grid{
     margin: auto;
+width: 90%;
 }
 .grid-item>img { width: var(--isogridsize); height: var(--isogridsize);}
 
@@ -216,12 +218,12 @@ input[type="url"]:focus,
 
 @media only screen and (max-width: 900px) {
     
-    .grid-item>img { width: var(--isogridsize-mobile); height: var(--isogridsize-mobile);}
+    .grid-item>img { width: var(--isogridsize-sm); height: var(--isogridsize-sm);}
 
     .grid-item {
         float: left;
-        width: var(--isogridsize-mobile);
-        height:var(--isogridsize-mobile);
+        width: var(--isogridsize-sm);
+        height:var(--isogridsize-sm);
       }
     
     .cover-container {
@@ -257,6 +259,14 @@ input[type="url"]:focus,
 }
 
 @media only screen and (max-width: 450px) {
+        
+    .grid-item>img { width: var(--isogridsize-xs); height: var(--isogridsize-xs);}
+
+    .grid-item {
+        float: left;
+        width: var(--isogridsize-xs);
+        height:var(--isogridsize-xs);
+      }
     h1 {
         font-size: 40px;
         text-transform: uppercase;
