@@ -56,16 +56,25 @@ $(function() {
 
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
+
         const elem = document.querySelector('.grid');
         const iso = new Isotope( elem, {
                 sortBy: 'year',
                 sortAscending: false,
                 itemSelector: '.grid-item',
-                layoutMode: 'masonry',
-                masonry: {
-                    columnWidth: 80
-                  }
+                layoutMode: 'fitRows',
+                fitRows: {
+                  gutter: 0
+                }
         });
+
+        anime({
+            targets: '#topnavi',
+            translateY: 100,
+            delay: 2000,
+            duration: 500
+          });
+
     }
   }
 

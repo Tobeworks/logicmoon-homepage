@@ -13,6 +13,8 @@
 	<!-- <script src="./node_modules/popper.js/dist/popper.min.js" defer></script> -->
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
 	<script src="./node_modules/isotope-layout/dist/isotope.pkgd.min.js" defer></script>
+	<script src="./node_modules/packery/dist/packery.pkgd.min.js" defer></script>
+	<script src="./node_modules/animejs/lib/anime.min.js" defer></script>
 	<script src="assets/js/app.js" defer></script>
 
 	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -80,7 +82,7 @@
 	<!-- Cover -->
 	<section class="cover-container d-flex w-100 px-3 py-3 mx-auto flex-column slide-in-bck-center">
 		<header class="d-none d-sm-block d-md-block">
-			<nav class="nav nav-masthead justify-content-center">
+			<nav class="nav nav-masthead justify-content-center" id="topnavi">
 				<a class="nav-link active" aria-current="page" href="#">Home</a>
 				<a class="nav-link" href="#about">About</a>
 				<a class="nav-link" href="#music">Music</a>
@@ -107,8 +109,8 @@
 					<img src="assets/img/portrait.png" alt="portrait" class="img-fluid">
 				</div>
 				<div class="col-sm">
-					<h2 class="text-xl-right">About</h2>
-					<p class="text text-xl-right text-justify">
+					<h2 class="text-xl-end">About</h2>
+					<p class="text text-xl-end text-justify">
 						Logic Moon is Tobias Lorsbach, an artist from Mainz, Germany. His previous releases have appeared on labels such as Archives, Archipel and his own spontanMusik imprint across all physical and digital formats. He spent many years in the minimal techno scenes since the early 2000s and whilst out on a field recording excursion, he fell upon the idea of layering some Ambient drones. From here, his debut album as Logic Moon was born.
 						<br><br>
 						Tobias’ musical background has drawn in a widescreen of genres with him having performed guitar in a death metal band, embarked on a DJ career and now as an Ambient musician. His varied experiences have only served to give birth to a range of ideas which are evident in his latest album ‘I See Planets’, clocking in at just over an hour.
@@ -156,8 +158,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm">
-					<h2 class="text-xl-right">Mastering</h2>
-					<p class="text-xl-right text-justify">Login Moon is well known for his mastering and postproduction for internationally known labels like Whitelabrecs, Dronarivm, Seasides on Postcards, Archives and many artist all over the globe.
+					<h2 class="text-xl-end">Mastering</h2>
+					<p class="text-xl-end text-justify">Login Moon is well known for his mastering and postproduction for internationally known labels like Whitelabrecs, Dronarivm, Seasides on Postcards, Archives and many artist all over the globe.
 					</p>
 					<!-- <div class="text-sm-center text-md-right"><button type="button" class="btn btn-lm">Projects</button></div> -->
 
@@ -176,15 +178,15 @@
 				<div class="col-sm">
 
 					<form id="contact-form" name="contact-form" action="#contact" method="post">
-						<div class="form-group">
+						<div class="mb-3">
 							<label>Email address</label>
 							<input type="email" class="form-control" name="email" required>
 						</div>
-						<div class="form-group">
+						<div class="mb-3">
 							<label>Name</label>
 							<input type="text" class="form-control" name="name" required>
 						</div>
-						<div class="form-group">
+						<div class="mb-3">
 							<label>Message</label>
 							<textarea class="form-control textarea" rows="3" name="message" required></textarea>
 						</div>
@@ -200,47 +202,64 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm">
-					<h2 class="text-xl-right">Discography</h2>
-					<p class="text-xl-right text-justify">
+					<h2 class="text-xl-end">Discography</h2>
+					
 					<div class="grid">
-					<div class="static-banner">Static banner</div>
-					<div class="grid-item" data-year="2012">
-						<img src="assets/img/covers/polygon.jpg" alt="" ></div>
-							<div class="grid-item" data-year="2012">
-								<img src="assets/img/covers/2011.jpg" alt=""></div>
-							<div class="grid-item" data-year="2013">
-								<img src="assets/img/covers/altrhein.jpg" alt=""></div>
-							<div class="grid-item" data-year="2014">
-								<img src="assets/img/covers/quitecity.jpg" alt=""></div>
-							<div class="grid-item" data-year="2016">
-								<img src="assets/img/covers/silentpath.jpg" alt=""></div>
-							<div class="grid-item" data-year="2016">
-								<img src="assets/img/covers/debut.jpg" alt=""></div>
-							<div class="grid-item" data-year="2017">
-								<img src="assets/img/covers/oblivion.jpg" alt=""></div>
-							<div class="grid-item" data-year="2016">
-								<img src="assets/img/covers/groundzero.jpg" alt=""></div>
-							<div class="grid-item" data-year="2017">
-								<img src="assets/img/covers/cascadian.jpg" alt=""></div>
-							<div class="grid-item" data-year="2018">
-								<img src="assets/img/covers/pheni1.jpg" alt="" ></div>
-							<div class="grid-item" data-year="2018">
-								<img src="assets/img/covers/pheni2.jpg" alt=""></div>
-							<div class="grid-item" data-year="2018">
-								<img src="assets/img/covers/pheni3.jpg" alt=""></div>
-							<div class="grid-item" data-year="2019">
-								<img src="assets/img/covers/phoenix.jpg" alt=""></div>
-							<div class="grid-item" data-year="2019">
-								<img src="assets/img/covers/iseeplanets.jpg" alt=""></div>
-							<div class="grid-item" data-year="2019">
-								<img src="assets/img/covers/tales.jpg" alt=""></div>
-							<div class="grid-item" data-year="2020">
-								<img src="assets/img/covers/2017.jpg" alt=""></div>
-							<div class="grid-item" data-year="2020">
-								<img src="assets/img/covers/coherence.jpg" alt=""></div>
-							<div class="grid-item" data-year="2021">
-								<img src="assets/img/covers/starmapping.jpg" alt=""></div>
-
+						<div class="grid-item" data-year="2011">
+							<img src="assets/img/covers/polygon.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2012">
+							<img src="assets/img/covers/2011.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2013">
+							<img src="assets/img/covers/altrhein.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2014">
+							<img src="assets/img/covers/quitecity.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2016">
+							<img src="assets/img/covers/silentpath.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2016">
+							<img src="assets/img/covers/debut.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2017">
+							<img src="assets/img/covers/oblivion.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2016">
+							<img src="assets/img/covers/groundzero.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2017">
+							<img src="assets/img/covers/cascadian.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2018">
+							<img src="assets/img/covers/pheni1.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2018">
+							<img src="assets/img/covers/pheni2.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2018">
+							<img src="assets/img/covers/pheni3.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2019">
+							<img src="assets/img/covers/phoenix.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2019">
+							<img src="assets/img/covers/iseeplanets.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2019">
+							<img src="assets/img/covers/tales.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2020">
+							<img src="assets/img/covers/2017.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2020">
+							<img src="assets/img/covers/coherence.jpg" alt="">
+						</div>
+						<div class="grid-item" data-year="2021">
+							<img src="assets/img/covers/starmapping.jpg" alt="">
+						</div>
+					
 					</div>
 
 				</div>

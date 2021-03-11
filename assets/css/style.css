@@ -32,6 +32,11 @@ iframe{
     height: 800px;
 }
 
+#topnavi{
+    position: relative;
+    top: -100px;
+}
+
 .nav-masthead .nav-link {
     padding: .1rem 0;
     font-weight: 600;
@@ -208,7 +213,7 @@ input[type="url"]:focus,
 
 .grid{
     margin: auto;
-    width: 90%;
+    width: 80%;
 }
 .grid-item > img { 
     width: var(--isogridsize); 
