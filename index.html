@@ -343,8 +343,8 @@
 
 					<div id="subfooter">
 						<nav class="nav justify-content-center nav-subfooter">
-							<a class="nav-link" href="#" data-toggle="modal" data-target="#impressum">Impressum</a>
-							<a class="nav-link" href="#" data-toggle="modal" data-target="#datenschutz">Datenschutz</a>
+							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#impressum">Impressum</a>
+							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#datenschutz">Datenschutz</a>
 							<a class="nav-link" href="https://tobeworks.de">Page by Tobeworks</a>
 						</nav>
 					</div>
@@ -362,9 +362,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="impressumLabel">Impressum</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 
@@ -387,7 +385,7 @@
 
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-lm" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-lm" data-bs-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
@@ -396,14 +394,12 @@
 
 
 	<!-- Modal -->
-	<div class="modal fade" id="datenschutz" tabindex="-1" aria-labelledby="datenschutzLabel" aria-hidden="true">
+	<div class="modal fade modal-dialog-scrollable" id="datenschutz" tabindex="-1" aria-labelledby="datenschutzLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="datenschutzLabel">Datenschutz</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<section id="teaser" class="container main-container mt-3">
@@ -521,7 +517,7 @@
 					</section>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-lm" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-lm" data-bs-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>

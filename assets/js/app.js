@@ -71,7 +71,7 @@ document.onreadystatechange = function () {
         anime({
             targets: '#topnavi',
             translateY: 100,
-            delay: 2000,
+            delay: 1500,
             duration: 500
           });
 
