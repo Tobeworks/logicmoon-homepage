@@ -1,6 +1,12 @@
+@import 'animate.css';
+
 :root{
     --main-dark : #000;
+    --isogridsize:200px;
+    --isogridsize-sm:140px;
+    --isogridsize-xs:100px;
 }
+
 html {
     scroll-behavior: smooth;
   }
@@ -198,17 +204,16 @@ input[type="url"]:focus,
     height: 0px;
 }
 
-:root{
-    --isogridsize:200px;
-    --isogridsize-sm:140px;
-    --isogridsize-xs:100px;
-}
+
 
 .grid{
     margin: auto;
-width: 90%;
+    width: 90%;
 }
-.grid-item>img { width: var(--isogridsize); height: var(--isogridsize);}
+.grid-item > img { 
+    width: var(--isogridsize); 
+    height: var(--isogridsize);
+}
 
 .grid-item {
     float: left;
@@ -259,14 +264,16 @@ width: 90%;
 }
 
 @media only screen and (max-width: 450px) {
-        
-    .grid-item>img { width: var(--isogridsize-xs); height: var(--isogridsize-xs);}
-
+      
+    .grid-item > img { 
+        width: var(--isogridsize-xs); 
+        height: var(--isogridsize-xs);
+    } 
     .grid-item {
         float: left;
         width: var(--isogridsize-xs);
         height:var(--isogridsize-xs);
-      }
+    }
     h1 {
         font-size: 40px;
         text-transform: uppercase;
@@ -295,13 +302,11 @@ width: 90%;
 .overlay-middle {
     height: 200px;
     width: 40%;
-    /* background: yellow; */
     margin: auto;
     top: 25%;
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    /* color: white; */
 }
 
 .overlay-middle .nav-link {
@@ -354,7 +359,6 @@ width: 90%;
 
 
 /* bg dark*/
-
 .bg-dark {
     background-image: url(../img/bg_blurred_dark.jpg);
     background-size: cover;
