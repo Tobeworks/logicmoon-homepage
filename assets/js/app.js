@@ -1,10 +1,10 @@
 // @deprecated
 $(function() {
 
-    const vp_height = $(window).height();
-    if (vp_height > 500) {
-        $('.cover-container').css('height', vp_height);
-    }
+    // const vp_height = $(window).height();
+    // if (vp_height > 500) {
+    //     $('.cover-container').css('height', vp_height);
+    // }
 
     $("#hamburger-nav-button, .nav-link").on('click',function() {
         $(".menu").slideToggle("slow");
@@ -35,6 +35,7 @@ $(function() {
     });
 
 });
+
 
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
@@ -71,8 +72,8 @@ document.onreadystatechange = function () {
         anime({
             targets: '#topnavi',
             translateY: 100,
-            delay: 1500,
-            duration: 500
+            delay: 1000,
+            duration: 450
           });
 
     }

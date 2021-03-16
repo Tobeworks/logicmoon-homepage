@@ -29,7 +29,7 @@ iframe{
     background: url(/assets/img/resize_cover.jpg);
     background-size: cover;
     background-color: black;
-    height: 800px;
+    height: 100vh;
 }
 
 #topnavi{
