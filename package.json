@@ -1,9 +1,9 @@
 {
-  "name": "logic-moon",
+  "name": "logic-moon.de",
   "version": "1.2",
   "description": "Homepage of Logic Moon Project",
   "main": "index.js",
-  "repository": "git@github.com:Tobeworks/logicmoon-template.git",
+  "repository": "git@github.com:Tobeworks/logicmoon-homepage.git",
   "author": "Tobias Lorsbach <hallo@tobeworks.de>",
   "license": "MIT",
   "dependencies": {
@@ -13,6 +13,7 @@
     "isotope-layout": "^3.0.6",
     "isotope-packery": "^2.0.1",
     "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "waypoints": "^4.0.1"
   }
 }
