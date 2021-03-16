@@ -1,25 +1,34 @@
 
+        const headlineWaypointer = id => {
+            var waypoint = new Waypoint({
+                element: document.getElementById(id),
+                offset: 'bottom-in-view',
+                handler: function(direction) {
+                    if(direction === 'down'){
+                        anime({
+                            targets: '#'+id,
+                            translateX: [100, 0],
+                            delay: 0,
+                            opacity: [0,1],
+                            duration: 500,
+                            loop: false
+                        });
+                    }
+                }
+              });
+        }
+
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
 
-        var waypoint = new Waypoint({
-            element: document.getElementById('headline-contact'),
-            offset: 'bottom-in-view',
-            handler: function(direction) {
-                console.log('Direction: ' + direction);
-                console.log(this.element.id + ' triggers at ' + this.triggerPoint);
-                if(direction === 'down'){
-                    anime({
-                        targets: '#headline-contact',
-                        translateX: [200, 0],
-                        delay: 0,
-                        duration: 500,
-                        loop: false
-                    });
-                }
-            }
-          })
 
+        headlineWaypointer('headline-about');
+        headlineWaypointer('headline-contact');
+        headlineWaypointer('headline-music');
+        headlineWaypointer('headline-mastering');
+        headlineWaypointer('headline-disco');
+
+        
         const elem = document.querySelector('.grid');
         const iso = new Isotope( elem, {
                 sortBy: 'year',
@@ -31,12 +40,19 @@ document.onreadystatechange = function () {
                 }
         });
 
+        /** Main Cover */
         anime({
             targets: '#topnavi',
             translateY: 100,
-            delay: 1000,
+            delay: 1500,
             duration: 450
           });
+        anime({
+            targets: '#subheadline',
+            opacity: [0,1],
+            delay: 1500,
+            duration: 450
+          }); 
 
     }
   }
