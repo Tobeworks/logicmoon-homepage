@@ -1,5 +1,5 @@
 <?php
-$empfaenger  = 'hallo@tobeworks.de';
+$empfaenger  = 'iam@logic-moon.de';
 
 // Betreff
 $betreff = 'New Message from Logic Moon';
