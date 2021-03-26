@@ -17,10 +17,9 @@ $nachricht = '
 </body>
 </html>
 ';
+$msg = filter_var(addslashes(nl2br($_POST['message'])));
+$text = sprintf($nachricht,$msg);
 
-$text = sprintf($nachricht,filter_var(addslashes($_POST['message'])));
-
-// für HTML-E-Mails muss der 'Content-type'-Header gesetzt werden
 $header[] = 'MIME-Version: 1.0';
 $header[] = 'Content-type: text/html; charset=utf-8';
 

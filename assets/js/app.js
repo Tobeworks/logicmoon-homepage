@@ -1,26 +1,24 @@
 
-        const headlineWaypointer = id => {
-            var waypoint = new Waypoint({
-                element: document.getElementById(id),
-                offset: 'bottom-in-view',
-                handler: function(direction) {
-                    if(direction === 'down'){
-                        anime({
-                            targets: '#'+id,
-                            translateX: [100, 0],
-                            delay: 0,
-                            opacity: [0,1],
-                            duration: 500,
-                            loop: false
-                        });
-                    }
-                }
-              });
+const headlineWaypointer = id => {
+    const waypoint = new Waypoint({
+        element: document.getElementById(id),
+        offset: 'bottom-in-view',
+        handler: function(direction) {
+            if(direction === 'down'){
+                anime({
+                    targets: '#'+id,
+                    translateX: [100, 0],
+                    delay: 0,
+                    opacity: [0,1],
+                    duration: 500,
+                    loop: false
+                });
+            }
         }
-
+        });
+}
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
-
 
         headlineWaypointer('headline-about');
         headlineWaypointer('headline-contact');
@@ -28,7 +26,6 @@ document.onreadystatechange = function () {
         headlineWaypointer('headline-mastering');
         headlineWaypointer('headline-disco');
 
-        
         const elem = document.querySelector('.grid');
         const iso = new Isotope( elem, {
                 sortBy: 'year',
