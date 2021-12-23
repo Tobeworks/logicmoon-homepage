@@ -1,4 +1,6 @@
 
+import './scss/style.scss'
+
 const headlineWaypointer = id => {
     const waypoint = new Waypoint({
         element: document.getElementById(id),
@@ -17,8 +19,9 @@ const headlineWaypointer = id => {
         }
         });
 }
-document.onreadystatechange = function () {
-    if (document.readyState == "complete") {
+
+
+document.addEventListener('DOMContentLoaded', () => {
 
         headlineWaypointer('headline-about');
         headlineWaypointer('headline-contact');
@@ -50,9 +53,7 @@ document.onreadystatechange = function () {
             delay: 1500,
             duration: 450
           }); 
-
-    }
-  }
+  });
 
 
 // @deprecated
