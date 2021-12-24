@@ -4,7 +4,12 @@
 npm install
 npm run build
 ```
-Point webservers document root to ./public
+Dev Server
+```
+npm run dev
+
+```
+Point production webservers document-root to *./public*
 
 
 
