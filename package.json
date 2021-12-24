@@ -16,11 +16,11 @@
     "rollup-plugin-scss": "^3.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.45.1",
-    "serve": "^13.0.2"
+    "serve": "^13.0.2",
+    "babel": "^6.23.0"
   },
   "dependencies": {
     "animejs": "^3.2.1",
-    "babel": "^6.23.0",
     "bootstrap": "^5.1.3",
     "isotope-layout": "^3.0.6",
     "isotope-packery": "^2.0.1",

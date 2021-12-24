@@ -7,7 +7,7 @@ import scss from 'rollup-plugin-scss';
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-    input: 'src/app.js',
+    input: ['src/app.js'],
     output: {
         name:'build',
         file: 'public/dist/js/bundle.umd.js',
@@ -17,7 +17,9 @@ export default {
     plugins: [
         resolve(),
         babel({ babelHelpers: 'bundled' }),
-        scss({ output: 'public/dist/css/style.css'}),
+        scss({ output: 'public/dist/css/style.css', sourceMap: true, outputStyle: 'compressed'}),
         production && terser()
-    ]
+    ],
+    external: ['isotope-layout/dist/isotope.pkgd.min.js',
+                'waypoints/src/waypoint.js']
 };
