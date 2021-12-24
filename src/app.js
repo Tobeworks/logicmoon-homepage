@@ -38,10 +38,18 @@ const initHome = () =>{
         duration: 450
     });
 
+    openFullscreenNav();
+}
 
+export {initHome};
+
+
+const openFullscreenNav = () =>{
     document.querySelector('#hamburger-nav-button').addEventListener("click", e => {
         e.preventDefault();
-        
+        const overlayMenu = document.getElementById('overlay-menu');
+        overlayMenu.classList.remove("hide");
+        overlayMenu.classList.add("show");
         anime({
             targets: '#overlay-menu',
             delay: 0,
@@ -51,11 +59,11 @@ const initHome = () =>{
         });
         console.log(e);
     });
+}
+
+const closeHamburgerNav = () => {
 
 }
-export {initHome};
-
-
 
 // const headlineWaypointer = id => {
 //     const waypoint = new Waypoint({

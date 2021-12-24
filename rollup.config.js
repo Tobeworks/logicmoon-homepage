@@ -20,7 +20,7 @@ export default {
     plugins: [
         resolve(),
         babel({ babelHelpers: 'bundled' }),
-        scss({ output: 'public/dist/css/style.css', sourceMap: true, outputStyle: 'compressed'}),
+        scss({ output: 'public/dist/css/style.css', sourceMap: true}),
         livereload(),
         production && terser()
     ],
