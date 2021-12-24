@@ -1,5 +1,5 @@
-### Logic Moon Homepage v2
-# Install
+# Logic Moon Homepage v2
+### Install
 ```
 npm install
 npm run build
