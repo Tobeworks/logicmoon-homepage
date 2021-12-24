@@ -48,15 +48,16 @@ const openFullscreenNav = () =>{
     document.querySelector('#hamburger-nav-button').addEventListener("click", e => {
         e.preventDefault();
         const overlayMenu = document.getElementById('overlay-menu');
-        overlayMenu.classList.remove("hide");
-        overlayMenu.classList.add("show");
+
         anime({
             targets: '#overlay-menu',
             delay: 0,
             opacity: [0, 1],
-            duration: 500,
+            duration: 2000,
             loop: false
         });
+        overlayMenu.classList.remove("hide");
+        overlayMenu.classList.add("show");
         console.log(e);
     });
 }

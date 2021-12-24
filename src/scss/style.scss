@@ -73,6 +73,11 @@ iframe{
     margin-left: 1.6rem;
 }
 
+
+.nav-subfooter{
+     column-gap: 1em;
+}
+
 .nav-subfooter .nav-link {
     font-size: 0.8em;
     text-transform: uppercase;
@@ -80,10 +85,11 @@ iframe{
     color: rgba(255, 255, 255, .8);
     background-color: transparent;
     border-bottom: .15rem solid transparent;
+   
 }
 
 .nav-subfooter .nav-link+.nav-link {
-    margin-left: 1.6rem;
+    // margin-left: 1.6rem;
 }
 
 .nav-masthead .active {
