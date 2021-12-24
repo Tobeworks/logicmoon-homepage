@@ -8,6 +8,8 @@ import livereload from 'rollup-plugin-livereload';
 // `npm run dev` -> `production` is false
 const production = !process.env.ROLLUP_WATCH;
 
+
+
 export default {
     input: ['src/app.js'],
     output: {
@@ -20,11 +22,8 @@ export default {
     plugins: [
         resolve(),
         babel({ babelHelpers: 'bundled' }),
-        scss({ output: 'public/dist/css/style.css', sourceMap: true}),
+        scss({ output: 'public/dist/css/style.css', sourceMap: true, outputStyle: 'compressed'}),
         livereload(),
         production && terser()
-    ],
-    external: [
-        'node_modules/isotope-layout/dist/isotope.pkgd.min.js',
-                'node_modules/waypoints/src/waypoint.js']
+    ]
 };
