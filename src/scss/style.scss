@@ -12,6 +12,7 @@
     --isogridsize-xs:100px;
 }
 
+
 html {
     scroll-behavior: smooth;
   }
@@ -95,7 +96,7 @@ h1 {
 h2 {
     font-size: 50px;
     text-transform: uppercase;
-    opacity: 0;
+   
 }
 
 h4 {
@@ -305,7 +306,9 @@ input[type="url"]:focus,
     /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0);
+    opacity: 0;
+    
     /* Black w/opacity */
     overflow-x: hidden;
     /* Disable horizontal scroll */
