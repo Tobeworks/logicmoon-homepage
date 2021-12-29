@@ -1,6 +1,6 @@
 {
   "name": "logic-moon.de",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Homepage of Logic Moon Project",
   "main": "app.js",
   "repository": "git@github.com:Tobeworks/logicmoon-homepage.git",
@@ -16,6 +16,7 @@
     "npm-run-all": "^4.1.5",
     "rollup": "^2.36.2",
     "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-minify-html": "^0.1.2",
     "rollup-plugin-scss": "^3.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.45.1",

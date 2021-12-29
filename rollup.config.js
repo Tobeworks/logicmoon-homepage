@@ -3,7 +3,7 @@ import { terser } from 'rollup-plugin-terser';
 import { babel } from '@rollup/plugin-babel';
 import scss from 'rollup-plugin-scss';
 import livereload from 'rollup-plugin-livereload';
-
+import { minifyHTML } from "rollup-plugin-minify-html";
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
 const production = !process.env.ROLLUP_WATCH;
@@ -24,6 +24,20 @@ export default {
         babel({ babelHelpers: 'bundled' }),
         scss({ output: 'public/dist/css/style.css', sourceMap: sourcemaps, outputStyle: 'compressed'}),
         !production &&  livereload(),
-        production && terser()
+        production && terser(),
+        minifyHTML({
+            targets: [
+                {
+                    src: "public/index.html",
+                    dest: "public/dist/index.html",
+                    minifyOptions: {
+                        collapseWhitespace: true,
+                        minifyCSS: true,
+                        minifyJS: true,
+                        minifyURLs: true
+                    }
+                }
+            ]
+        })
     ]
 };

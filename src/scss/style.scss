@@ -272,13 +272,22 @@ input[type="url"]:focus,
 .grid-item > img { 
     width: var(--isogridsize); 
     height: var(--isogridsize);
+    filter: grayscale(80%);
+    transition: ease-in .3s;
+    transition: ease-out 1s;
+    
+    &:hover{
+        filter: grayscale(0%);
+        
+    }
 }
 
+
 .grid-item {
-    float: left;
     width: var(--isogridsize);
     height:var(--isogridsize);
   }
+
 
 @media only screen and (max-width: 900px) {
     
