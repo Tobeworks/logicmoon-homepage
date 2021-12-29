@@ -39,10 +39,10 @@
 
 <body>
 
-	<div id="overlay-menu" class="hide">
+	<div id="overlay-menu" class="d-xxl-none d-xl-none d-lg-none">
 		<div class="d-flex justify-content-end d-md-none" id="overlay-close">
 			<div class="button-nav-block">
-				<button class="btn btn-hamburger" id="overlay-close-button">
+				<button class="btn btn-hamburger overlayMenuClose" id="overlay-close-button">
 					<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
 						<path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
@@ -54,12 +54,12 @@
 
 		<div class="overlay-middle">
 			<nav class="nav flex-column" id="fullscreen-menu">
-				<a class="nav-link active" href="#">Home</a>
-				<a class="nav-link" href="#about">About</a>
-				<a class="nav-link" href="#music">Music</a>
-				<a class="nav-link" href="#mastering">Mastering</a>
-				<a class="nav-link" href="#disco">Discography</a>
-				<a class="nav-link" href="#contact">Contact</a>
+				<a class="nav-link active overlayMenuClose" href="#">Home</a>
+				<a class="nav-link overlayMenuClose" href="#about">About</a>
+				<a class="nav-link overlayMenuClose" href="#music">Music</a>
+				<a class="nav-link overlayMenuClose" href="#mastering">Mastering</a>
+				<a class="nav-link overlayMenuClose" href="#disco">Discography</a>
+				<a class="nav-link overlayMenuClose" href="#contact">Contact</a>
 			</nav>
 		</div>
 	</div>
@@ -107,7 +107,7 @@
 				<div class="col-sm">
 					<h2 class="text-xl-end" id="headline-about">About</h2>
 					<p class="text text-xl-end text-justify">
-						
+
 						Logic Moon is Tobias Lorsbach, an artist from Mainz, Germany. His previous releases have appeared on labels such as Archives, Archipel and his own spontanMusik imprint across all physical and digital formats. He spent many years in the minimal techno scenes since the early 2000s and whilst out on a field recording excursion, he fell upon the idea of layering some Ambient
 						drones. From here, his debut album as Logic Moon was born.
 						<br><br>
@@ -127,7 +127,7 @@
 				<div class="col-sm">
 					<h2 class="text-left" id="headline-music">Music</h2>
 
-					<p class="text text-left">To date, 8 albums, 8 EPs and singles and various contributions on compilations have been released on international labels. In addition, there are various contributions and productions in the film and advertising sector.</p>
+					<p class="text text-left">To date, 8 albums, 10 EPs and singles and various contributions on compilations have been released on international labels. In addition, there are various contributions and productions in the film and advertising sector.</p>
 
 					<div>
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/M9a4VS4Sxz8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -204,7 +204,7 @@
 				<div class="col-sm">
 					<h2 class="text-xl-end" id="headline-disco">Discography</h2>
 
-					<div class="grid">
+					<div id="discogrid">
 						<div class="grid-item" data-year="2011">
 							<img src="assets/img/covers/polygon.jpg" alt="">
 						</div>
@@ -265,7 +265,7 @@
 						<div class="grid-item" data-year="2021">
 							<img src="assets/img/covers/Aeterna_Cover01_efx_500.jpg" alt="Logic Moon Aeterna EP ">
 						</div>
-
+						<div class="js-shuffle-sizer"></div>
 					</div>
 
 				</div>
@@ -358,8 +358,8 @@
 
 					<div id="subfooter">
 						<nav class="nav justify-content-center nav-subfooter">
-							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#impressum">Impressum</a>
-							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#datenschutz">Datenschutz</a>
+							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalimpressum" id="InputImpressum">Impressum</a>
+							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modaldatenschutz" id="inputDatenschutz">Datenschutz</a>
 							<a class="nav-link" href="https://tobeworks.de">Made with ❤ by Tobeworks</a>
 						</nav>
 					</div>
@@ -372,7 +372,7 @@
 
 
 	<!-- Modal -->
-	<div class="modal fade" id="impressum" tabindex="-1" aria-labelledby="impressumLabel" aria-hidden="true">
+	<div class="modal fade" id="modalimpressum" tabindex="-1" aria-labelledby="impressumLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -387,7 +387,7 @@
 					Neue Universitätsstraße 7<br>
 					55116 Mainz<br><br>
 					Mobil: 0179/1259004 <br>
-					<p class="reverse"><a href="/kontakt">ed.skrowebot@ollah</a></p>
+					<p class="reverseaddr"><a href="/kontakt">ed.skrowebot@ollah</a></p>
 
 					Geschäftsführung: Tobias Lorsbach<br>
 
@@ -407,7 +407,7 @@
 	</div>
 
 	<!-- Modal -->
-	<div class="modal fade modal-dialog-scrollable" id="datenschutz" tabindex="-1" aria-labelledby="datenschutzLabel" aria-hidden="true">
+	<div class="modal fade modal-dialog-scrollable" id="modaldatenschutz" tabindex="-1" aria-labelledby="datenschutzLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -415,7 +415,7 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<section id="teaser" class="container main-container mt-3">
+	
 						<p>Diese Datenschutzerklärung klärt Sie in der die Art, dem Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) innerhalb dieses Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profile auf (alles nachfolgend gemeinsam bezeichnet als „Onlineangebot“
 							oder "Webseite"). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).<br>
 							<br>
@@ -425,7 +425,7 @@
 								Neue Universitätsstraße 7<br>
 								55116 Mainz<br>
 							</span></p>
-						<p class="reverse"><a href="/kontakt">ed.skrowebot@ollah</a></p>
+						<p class="reverseaddr"><a href="/kontakt">ed.skrowebot@ollah</a></p>
 						<a href="/impressum">Impressum</a><br>
 						<p></p>
 						<h3>Arten der verarbeiteten Daten:</h3>
@@ -564,7 +564,7 @@
 						<p></p>
 						<p><span>Wir binden die Schriftarten ("Google Fonts") des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein. Datenschutzerklärung: <a target="_blank" href="https://www.google.com/policies/privacy/">https://www.google.com/policies/privacy/</a>, Opt-Out: <a target="_blank"
 									href="https://adssettings.google.com/authenticated">https://adssettings.google.com/authenticated</a>.</span></p>
-					</section>
+
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-lm" data-bs-dismiss="modal">Close</button>

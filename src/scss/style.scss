@@ -1,12 +1,13 @@
 @import './animate.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
-//@import '../../node_modules/bootstrap/scss/utilities';
+@import '../../node_modules/bootstrap/scss/utilities';
 @import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
 @import '../../node_modules/bootstrap/scss/forms';
 @import '../../node_modules/bootstrap/scss/modal';
 @import '../../node_modules/bootstrap/scss/nav';
 @import '../../node_modules/bootstrap/scss/navbar';
-//@import '../../node_modules/bootstrap/scss/_helpers.scss';
+@import '../../node_modules/bootstrap/scss/_helpers.scss';
+@import '../../node_modules/bootstrap/scss/close';
 @import '../../node_modules/bootstrap/scss/images';
 @import '../../node_modules/bootstrap/scss/buttons';
 @import '../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
@@ -262,9 +263,6 @@ input[type="url"]:focus,
         height:var(--isogridsize-sm);
       }
     
-    /* #cover-container {
-        height: 100vh;
-    } */
     #contact-form {
         margin-top: 0px;
     }
@@ -321,7 +319,7 @@ input[type="url"]:focus,
     z-index: 20;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, .9);    
+    background-color: rgba(0, 0, 0, 1);    
     /* Black w/opacity */
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -397,7 +395,7 @@ input[type="url"]:focus,
 
 /* bg dark*/
 .bg-dark {
-    background-image: url(../img/bg_blurred_dark.jpg);
+    // background-image: url(../img/bg_blurred_dark.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -428,9 +426,10 @@ input[type="url"]:focus,
     background-color: #000;
 }
 
-.reverse {
+.reverseaddr {
     unicode-bidi: bidi-override;
     direction: rtl;
+    text-align: left;
 }
 
 .modal-dialog {

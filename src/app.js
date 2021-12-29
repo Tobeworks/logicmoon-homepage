@@ -1,29 +1,19 @@
 import anime from 'animejs';
 import ScrollReveal from 'scrollreveal';
 import './scss/style.scss'
+import Shuffle from 'shufflejs';
+import * as bootstrap from 'bootstrap';
 
-const initHome = () =>{
-    
+const initHome = () => {
 
-    // headlineWaypointer('headline-about');
-    // headlineWaypointer('headline-contact');
-    // headlineWaypointer('headline-music');
-    // headlineWaypointer('headline-mastering');
-    // headlineWaypointer('headline-disco');
-
-    // const elem = document.querySelector('.grid');
-    // const iso = new Isotope(elem, {
-    //     sortBy: 'year',
-    //     sortAscending: false,
+    // const shuffleInstance = new Shuffle(document.getElementById('discogrid'), {
     //     itemSelector: '.grid-item',
-    //     layoutMode: 'fitRows',
-    //     fitRows: {
-    //         gutter: 0
-    //     }
+    //     sizer: '.js-shuffle-sizer',
     // });
 
-    ScrollReveal().reveal('h2', { duration: 1000 });
-
+    ScrollReveal().reveal('h2', { duration: 1500 });
+    ScrollReveal().reveal('section', { duration: 500 });
+    ScrollReveal().reveal('.grid-item', { interval: 16, reset: true, duration: 500 });
     /** Main Cover */
     anime({
         targets: '#topnavi',
@@ -37,23 +27,51 @@ const initHome = () =>{
         delay: 1500,
         duration: 450
     });
- 
-    openFullscreenNav();
-    closeHamburgerNav();
+
+    fullscreenNav();
+    //bsModals();
 }
 
-export {initHome};
+export { initHome };
 
 
+const bsModals = () =>{
+    const modalImpressum = document.getElementById('modalimpressum')
 
+    const ModalImpressum = new bootstrap.Modal(modalImpressum , {
+        keyboard: false
+    })
 
-const openFullscreenNav = () =>{
-
-
-
-    document.querySelector('#hamburger-nav-button').addEventListener("click",  e=> {
-       
+    modalImpressum.addEventListener('click', e =>{
         e.preventDefault();
+       // ModalImpressum.show();
+    });
+
+    // const modalDatenschutz = document.getElementById('modalDatenschutz')
+    // const inputDatenschutz = document.getElementById('inputDatenschutz')
+
+    // modalDatenschutz.addEventListener('shown.bs.modal', function () {
+    //     inputDatenschutz.focus()
+    // })
+
+    // const ModalDatenschutz = new bootstrap.Modal(modalDatenschutz, {
+    //     keyboard: false
+    // })
+
+    // modalDatenschutz.addEventListener('click', e => {
+    //     e.preventDefault();
+    //     ModalDatenschutz.show();
+    // });
+    
+
+}
+
+
+const fullscreenNav = () => {
+
+    document.querySelector('#hamburger-nav-button').addEventListener("click", e => {
+
+       e.preventDefault();
 
         const animation = anime({
             targets: '#overlay-menu',
@@ -67,24 +85,24 @@ const openFullscreenNav = () =>{
             easing: 'linear'
 
         });
-      animation.play();
+        animation.play();
 
         anime({
             targets: '#fullscreen-menu a',
-            opacity:[0,1],
+            opacity: [0, 1],
             delay: anime.stagger(100)
         });
 
     });
 
 
-    const overlayMenuClose = document.getElementById('overlay-close-button').addEventListener("click", e => {
-        e.preventDefault();
+   const backAnimation = e => {
+        // e.preventDefault();
         const animation = anime({
             targets: '#overlay-menu',
             delay: 500,
-            opacity: [1,0],
-            translateX: [0,850],
+            opacity: [1, 0],
+            translateX: [0, 850],
             duration: 500,
             endDelay: 0,
             loop: false,
@@ -93,69 +111,17 @@ const openFullscreenNav = () =>{
         });
         animation.play();
 
-
         anime({
             targets: '#fullscreen-menu a',
             opacity: [1, 0],
             delay: anime.stagger(100, { direction: 'reverse' })
         });
-    });
+    }
+
+    const overlayMenuClose = document.getElementsByClassName('overlayMenuClose');
+
+    for (var i = 0; i < overlayMenuClose.length; i++) {
+        overlayMenuClose[i].addEventListener('click', backAnimation, false);
+    }
+    
 }
-
-const closeHamburgerNav = () => {
-
-
-}
-
-// const headlineWaypointer = id => {
-//     const waypoint = new Waypoint({
-//         element: document.getElementById(id),
-//         offset: 'bottom-in-view',
-//         handler: function (direction) {
-//             if (direction === 'down') {
-//                 anime({
-//                     targets: '#' + id,
-//                     translateX: [100, 0],
-//                     delay: 0,
-//                     opacity: [0, 1],
-//                     duration: 500,
-//                     loop: false
-//                 });
-//             }
-//         }
-//     });
-// }
-
-//bindings
-
-
-// @deprecated
-
-// $(function() {
-
-//     $("#hamburger-nav-button, .nav-link").on('click',function() {
-//         $(".menu").slideToggle("slow");
-//     });
-
-//     $('#hamburger-nav-button').on('click',function() {
-//         $(this).fadeOut(500);
-//         $('#overlay-menu').fadeIn(500);
-//     });
-
-//     $('#overlay-close-button, #fullscreen-menu .nav-link').on('click',function() {
-//         $('#overlay-menu').fadeOut(500);
-//         $('#hamburger-nav-button').fadeIn(500);
-//     });
-
-//     $('#contact-form').on('submit',function() {
-//         $.post("sendmail.php", $(this).serialize(), function(data) {
-//             if (data == 'true') {
-//                 $('#mail-alert').html('Your Mail was succesfully sent').fadeIn(500);
-//             } else {
-//                 $('#mail-alert').html('There was an error. Sorry :(').fadeIn(500);
-//             }
-//         });
-//         return false;
-//     });
-
-// });
