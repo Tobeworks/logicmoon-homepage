@@ -68,9 +68,12 @@ const openFullscreenNav = () =>{
 
         });
       animation.play();
-       // console.log(res);
-    //    overlayMenu.classList.remove("hide");
-    //  overlayMenu.classList.add("show");
+
+        anime({
+            targets: '#fullscreen-menu a',
+            opacity:[0,1],
+            delay: anime.stagger(100)
+        });
 
     });
 
@@ -79,7 +82,7 @@ const openFullscreenNav = () =>{
         e.preventDefault();
         const animation = anime({
             targets: '#overlay-menu',
-            delay: 0,
+            delay: 500,
             opacity: [1,0],
             translateX: [0,850],
             duration: 500,
@@ -89,8 +92,13 @@ const openFullscreenNav = () =>{
             easing: 'linear'
         });
         animation.play();
-        //  overlayMenu.classList.remove("show");
-        // overlayMenu.classList.add("hide");
+
+
+        anime({
+            targets: '#fullscreen-menu a',
+            opacity: [1, 0],
+            delay: anime.stagger(100, { direction: 'reverse' })
+        });
     });
 }
 
