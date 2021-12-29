@@ -23,7 +23,7 @@ export default {
         resolve(),
         babel({ babelHelpers: 'bundled' }),
         scss({ output: 'public/dist/css/style.css', sourceMap: true, outputStyle: 'compressed'}),
-        livereload(),
+        !production &&  livereload(),
         production && terser()
     ]
 };

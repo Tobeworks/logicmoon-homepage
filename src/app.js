@@ -14,7 +14,7 @@ const initHome = () => {
 
     ScrollReveal().reveal('h2', { duration: 1500 });
     ScrollReveal().reveal('section', { duration: 500 });
-    // ScrollReveal().reveal('.grid-item', { interval: 16, reset: true, duration: 500 });
+    ScrollReveal().reveal('.grid-item', { interval: 16, reset: true, duration: 500 });
     /** Main Cover */
     anime({
         targets: '#topnavi',
