@@ -34,7 +34,7 @@
     "watch": "rollup -c -w",
     "dev": "npm-run-all --parallel start watch",
     "start": "serve public",
-    "sync":"rsync -a --exclude '.git' public/* ../httpdocs/",
+    "sync":"rm -rf httpdocs/*; rsync -a --exclude '.map' public/* ../httpdocs/",
     "deploy":"npm-run-all build sync"
   }
 }

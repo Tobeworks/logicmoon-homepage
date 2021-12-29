@@ -8,7 +8,7 @@ import livereload from 'rollup-plugin-livereload';
 // `npm run dev` -> `production` is false
 const production = !process.env.ROLLUP_WATCH;
 
-
+const sourcemaps = production === true ? true : false;
 
 export default {
     input: ['src/app.js'],
@@ -16,13 +16,13 @@ export default {
         name:'build',
         file: 'public/dist/js/bundle.umd.js',
         format: 'umd',
-        sourcemap: true,
+        sourcemap: sourcemaps,
         globals:{}
     },
     plugins: [
         resolve(),
         babel({ babelHelpers: 'bundled' }),
-        scss({ output: 'public/dist/css/style.css', sourceMap: true, outputStyle: 'compressed'}),
+        scss({ output: 'public/dist/css/style.css', sourceMap: sourcemaps, outputStyle: 'compressed'}),
         !production &&  livereload(),
         production && terser()
     ]
