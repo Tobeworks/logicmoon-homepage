@@ -1,7 +1,7 @@
 import anime from 'animejs';
 import ScrollReveal from 'scrollreveal';
 import './scss/style.scss'
-import Shuffle from 'shufflejs';
+//import Shuffle from 'shufflejs';
 import * as bootstrap from 'bootstrap';
 
 const initHome = () => {
@@ -11,20 +11,21 @@ const initHome = () => {
     //     sizer: '.js-shuffle-sizer',
     // });
 
+
     ScrollReveal().reveal('h2', { duration: 1500 });
     ScrollReveal().reveal('section', { duration: 500 });
-    ScrollReveal().reveal('.grid-item', { interval: 16, reset: true, duration: 500 });
+    // ScrollReveal().reveal('.grid-item', { interval: 16, reset: true, duration: 500 });
     /** Main Cover */
     anime({
         targets: '#topnavi',
         translateY: 100,
-        delay: 1500,
+        delay: 1200,
         duration: 450
     });
     anime({
         targets: '#subheadline',
         opacity: [0, 1],
-        delay: 1500,
+        delay: 1200,
         duration: 450
     });
 
@@ -33,38 +34,6 @@ const initHome = () => {
 }
 
 export { initHome };
-
-
-const bsModals = () =>{
-    const modalImpressum = document.getElementById('modalimpressum')
-
-    const ModalImpressum = new bootstrap.Modal(modalImpressum , {
-        keyboard: false
-    })
-
-    modalImpressum.addEventListener('click', e =>{
-        e.preventDefault();
-       // ModalImpressum.show();
-    });
-
-    // const modalDatenschutz = document.getElementById('modalDatenschutz')
-    // const inputDatenschutz = document.getElementById('inputDatenschutz')
-
-    // modalDatenschutz.addEventListener('shown.bs.modal', function () {
-    //     inputDatenschutz.focus()
-    // })
-
-    // const ModalDatenschutz = new bootstrap.Modal(modalDatenschutz, {
-    //     keyboard: false
-    // })
-
-    // modalDatenschutz.addEventListener('click', e => {
-    //     e.preventDefault();
-    //     ModalDatenschutz.show();
-    // });
-    
-
-}
 
 
 const fullscreenNav = () => {
