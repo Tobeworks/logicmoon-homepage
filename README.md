@@ -9,8 +9,13 @@ Dev Server
 npm run dev
 
 ```
-Point production webservers document-root to *./public*
 
+### Deploy
+deploy to ../httpdocs which piints to document root of your webserver`S prod version. Then run
+```
+npm run deploy
+
+```
 
 
 
