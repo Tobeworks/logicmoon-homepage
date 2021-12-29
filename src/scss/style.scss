@@ -88,9 +88,9 @@ iframe{
    
 }
 
-.nav-subfooter .nav-link+.nav-link {
-    // margin-left: 1.6rem;
-}
+// .nav-subfooter .nav-link+.nav-link {
+//      margin-left: 1.6rem;
+// }
 
 .nav-masthead .active {
     color: #fff;
@@ -318,23 +318,22 @@ input[type="url"]:focus,
     height: 100%;
     width: 100%;
     position: fixed;
-    /* Stay in place */
     z-index: 20;
-    /* Sit on top */
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, .9);    
     /* Black w/opacity */
     overflow-x: hidden;
     /* Disable horizontal scroll */
-    transition: 0.5s;
+    transform: translateX(850px);
     
-    &.show{
-        display: block !important;
-    }
-    &.hide{
-        display: none !important;
-    }
+    // &.show{
+    //     display: block !important;
+    //     transform: translateX(0px);
+    // }
+    // &.hide{
+    //     display: none !important; 
+    // }
 }
 
 .overlay-middle {

@@ -37,32 +37,65 @@ const initHome = () =>{
         delay: 1500,
         duration: 450
     });
-
+ 
     openFullscreenNav();
+    closeHamburgerNav();
 }
 
 export {initHome};
 
 
-const openFullscreenNav = () =>{
-    document.querySelector('#hamburger-nav-button').addEventListener("click", e => {
-        e.preventDefault();
-        const overlayMenu = document.getElementById('overlay-menu');
 
-        anime({
+
+const openFullscreenNav = () =>{
+
+
+
+    document.querySelector('#hamburger-nav-button').addEventListener("click",  e=> {
+       
+        e.preventDefault();
+
+        const animation = anime({
             targets: '#overlay-menu',
             delay: 0,
             opacity: [0, 1],
-            duration: 2000,
-            loop: false
+            translateX: [850, 0],
+            duration: 500,
+            endDelay: 0,
+            loop: false,
+            autoplay: false,
+            easing: 'linear'
+
         });
-        overlayMenu.classList.remove("hide");
-        overlayMenu.classList.add("show");
-        console.log(e);
+      animation.play();
+       // console.log(res);
+    //    overlayMenu.classList.remove("hide");
+    //  overlayMenu.classList.add("show");
+
+    });
+
+
+    const overlayMenuClose = document.getElementById('overlay-close-button').addEventListener("click", e => {
+        e.preventDefault();
+        const animation = anime({
+            targets: '#overlay-menu',
+            delay: 0,
+            opacity: [1,0],
+            translateX: [0,850],
+            duration: 500,
+            endDelay: 0,
+            loop: false,
+            autoplay: false,
+            easing: 'linear'
+        });
+        animation.play();
+        //  overlayMenu.classList.remove("show");
+        // overlayMenu.classList.add("hide");
     });
 }
 
 const closeHamburgerNav = () => {
+
 
 }
 
