@@ -13,7 +13,6 @@
     "@rollup/plugin-node-resolve": "^11.1.0",
     "babel": "^6.23.0",
     "babel-preset-react": "^6.24.1",
-    "gulp": "^4.0.2",
     "npm-run-all": "^4.1.5",
     "rollup": "^2.36.2",
     "rollup-plugin-livereload": "^2.0.5",
@@ -34,7 +33,7 @@
     "watch": "rollup -c -w",
     "dev": "npm-run-all --parallel start watch",
     "start": "serve public",
-    "sync":"rm -rf httpdocs/*; rsync -a --exclude '.map' public/* ../httpdocs/",
-    "deploy":"npm-run-all build sync"
+    "sync": "rm -rf httpdocs/*; rsync -a --exclude '.map' public/* ../httpdocs/",
+    "deploy": "npm-run-all build sync"
   }
 }

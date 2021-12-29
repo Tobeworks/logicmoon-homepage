@@ -174,24 +174,8 @@ footer {
     border-color: #353535;
 }
 
-.btn-hamburger {
-    color: #000;
-    background-color: #4c4c4c;
-    opacity: 0.5;
-    border-radius: 6px;
-    border: 0;
-    margin: 14px;
-    padding: 5px;
-    transition: opacity 0.8s;
-}
 
-.btn-hamburger:hover {
-    opacity: 0.9;
-}
 
-btn-hamburger:hover {
-    color: #eee;
-}
 
 .form-control {
     border: 1px solid black;
@@ -230,12 +214,55 @@ input[type="url"]:focus,
 #hamburger-nav-sticky,
 #overlay-close {
     background-color: transparent;
-    position: sticky;
+    position:fixed;
     top: 15px;
     z-index: 10;
     height: 0px;
+    left: 83%;
+
+    .btn-hamburger {
+    color: #000;
+    background-color: #4c4c4c;
+    opacity: 0.5;
+    border-radius: 6px;
+    border: 0;
+    margin: 14px;
+    padding: 5px;
+    transition: opacity 0.8s;
+
+        &:hover{
+            opacity: 0.9;
+            color: #eee;
+        }
+    }
+
 }
 
+#scrollToTop{
+        position: fixed;
+        bottom: 2%;
+        z-index: 10;
+        left: 85%;
+        width: 30px;
+
+        #scrollToTop-button{
+            color: rgb(116, 116, 116);
+            mix-blend-mode: difference;
+
+        }
+        &.hide{
+            display: none;
+        }
+        &.show{
+            display: block;
+        }
+}
+
+@include media-breakpoint-up(lg) {
+    #scrollToTop{
+        left: 95%;
+    }
+}
 
 
 .grid{
@@ -320,18 +347,8 @@ input[type="url"]:focus,
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 1);    
-    /* Black w/opacity */
     overflow-x: hidden;
-    /* Disable horizontal scroll */
     transform: translateX(850px);
-    
-    // &.show{
-    //     display: block !important;
-    //     transform: translateX(0px);
-    // }
-    // &.hide{
-    //     display: none !important; 
-    // }
 }
 
 .overlay-middle {
