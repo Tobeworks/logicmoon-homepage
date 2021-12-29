@@ -161,9 +161,16 @@
 				<div class="col-sm">
 					<h2 class="text-left" id="headline-contact">Contact</h2>
 				</div>
+				<div id="msg_success" class="alert alert-success d-none" role="alert">
+					Your Message has been sent
+				</div>
+
+				<div id="msg_error" class="alert alert-danger d-none" role="alert">
+					error send you message
+				</div>
 				<div class="col-sm">
 
-					<form id="contact-form" name="contact-form" action="#contact" method="post">
+					<form id="contactform" name="contact-form" action="#contact" method="post">
 						<div class="mb-3">
 							<label>Email address</label>
 							<input type="email" class="form-control" name="email" required>

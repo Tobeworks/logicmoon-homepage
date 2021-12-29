@@ -30,7 +30,7 @@ const initHome = () => {
     });
 
     fullscreenNav();
-    //bsModals();
+    submitForm();
 }
 
 export { initHome };
@@ -93,4 +93,44 @@ const fullscreenNav = () => {
         overlayMenuClose[i].addEventListener('click', backAnimation, false);
     }
     
+}
+
+const submitForm = () =>{
+ 
+        const sendData = () => {
+            const XHR = new XMLHttpRequest();
+
+            // Bind the FormData object and the form element
+            const FD = new FormData(form);
+
+            // Define what happens on successful data submission
+            XHR.addEventListener("load", function (event) {
+               // alert(event.target.responseText);
+                if (event.target.responseText === 'true'){
+                    document.getElementById('msg_success').classList.remove('d-none');
+                }else{
+                    document.getElementById('msg_error').classList.remove('d-none');
+                }
+            });
+
+            // Define what happens in case of error
+            XHR.addEventListener("error", function (event) {
+               // alert('Oops! Something went wrong.');
+            });
+
+            // Set up our request
+            XHR.open("POST", "./sendmail.php");
+
+            // The data sent is what the user provided in the form
+            XHR.send(FD);
+        }
+
+        // Access the form element...
+        const form = document.getElementById("contactform");
+
+        // ...and take over its submit event.
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            sendData();
+        });
 }

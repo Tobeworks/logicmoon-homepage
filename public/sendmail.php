@@ -1,4 +1,6 @@
 <?php
+
+
 $empfaenger  = 'iam@logic-moon.de';
 
 // Betreff
