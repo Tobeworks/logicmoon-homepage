@@ -3,17 +3,11 @@ import ScrollReveal from "scrollreveal";
 import "./scss/style.scss";
 import * as bootstrap from "bootstrap";
 
-
-
-
-
-
 const initHome = () => {
 
-
-  ScrollReveal().reveal("h2", { duration: 1800 });
-  ScrollReveal().reveal("section", { duration: 700 });
-  ScrollReveal().reveal(".grid-item", { duration: 500 });
+    ScrollReveal().reveal("h2", { duration: 1800 });
+   // ScrollReveal().reveal(".main-section", { duration: 700 });
+    ScrollReveal().reveal(".grid-item", { duration: 500 });
   /** Main Cover */
   anime({
     targets: "#topnavi",
@@ -31,6 +25,7 @@ const initHome = () => {
   fullscreenNav();
   submitForm();
   displayScrollto();
+  klickDisco();
 };
 
 export { initHome };
@@ -93,13 +88,9 @@ const fullscreenNav = () => {
 const submitForm = () => {
   const sendData = () => {
     const XHR = new XMLHttpRequest();
-
-    // Bind the FormData object and the form element
     const FD = new FormData(form);
 
-    // Define what happens on successful data submission
     XHR.addEventListener("load", function (event) {
-      // alert(event.target.responseText);
       if (event.target.responseText === "true") {
         document.getElementById("msg_success").classList.remove("d-none");
       } else {
@@ -107,43 +98,60 @@ const submitForm = () => {
       }
     });
 
-    // Define what happens in case of error
     XHR.addEventListener("error", function (event) {
       // alert('Oops! Something went wrong.');
     });
 
-    // Set up our request
     XHR.open("POST", "./sendmail.php");
-
-    // The data sent is what the user provided in the form
     XHR.send(FD);
   };
 
-  // Access the form element...
   const form = document.getElementById("contactform");
 
-  // ...and take over its submit event.
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     sendData();
   });
 };
 
-const displayScrollto = () =>{
-    const about = document.getElementById('about');
-    const scrollToTop = document.getElementById('scrollToTop');
+const displayScrollto = () => {
+  const about = document.getElementById("about");
+  const scrollToTop = document.getElementById("scrollToTop");
 
+  window.addEventListener("scroll", (event) => {
+    let scroll = window.scrollY;
+    if (Math.floor(scroll) > about.offsetTop) {
+      scrollToTop.classList.remove("hide");
+    } else {
+      scrollToTop.classList.add("hide");
+    }
+  });
 
-    window.addEventListener("scroll", (event) => {
-        let scroll = window.scrollY;
-        if (Math.floor(scroll) > about.offsetTop){
-            scrollToTop.classList.remove('hide');
-        }else{
-            scrollToTop.classList.add('hide');
-        } 
-    });
+  scrollToTop.addEventListener("click", (e) => {
+    window.scrollTo(0, 0);
+  });
+};
 
-    scrollToTop.addEventListener('click',e =>{
-        window.scrollTo(0, 0);
-    })
+const albums = [{ id: 144584733}];
+
+const klickDisco = () => {
+  const covers = document.querySelectorAll('.grid-item');
+  const modalplayer = document.getElementById('modalplayerframe');
+ 
+
+  let count = 0;
+  covers.forEach(element => {
+    if (element.attributes[2].value !== ''){
+      covers[count].addEventListener('click',e =>{
+        console.log(element.attributes[2].value);
+        modalplayer.setAttribute('src', `https://bandcamp.com/EmbeddedPlayer/album=${element.getAttribute('data-release-id')}/size=large/bgcol=000000/linkcol=ffffff/artwork=small/transparent=true/`);
+      })
+
+      covers[count].classList.add('pointer');
+      covers[count].setAttribute('data-bs-toggle','modal');
+      covers[count].setAttribute('data-bs-target', '#modalplayer');
+    }
+    count++;
+  });
+  
 }
