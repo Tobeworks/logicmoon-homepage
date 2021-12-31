@@ -141,48 +141,14 @@
 	</section>
 
 
-	<section class="main-section bg-dark" id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm">
-					<h2 class="text-left" id="headline-contact">Contact</h2>
-				</div>
-				<div id="msg_success" class="alert alert-success d-none" role="alert">
-					Your Message has been sent
-				</div>
 
-				<div id="msg_error" class="alert alert-danger d-none" role="alert">
-					error send you message
-				</div>
-				<div class="col-sm">
 
-					<form id="contactform" name="contact-form" action="#contact" method="post">
-						<div class="mb-3">
-							<label>Email address</label>
-							<input type="email" class="form-control" name="email" required>
-						</div>
-						<div class="mb-3">
-							<label>Name</label>
-							<input type="text" class="form-control" name="name" required>
-						</div>
-						<div class="mb-3">
-							<label>Message</label>
-							<textarea class="form-control textarea" rows="3" name="message" required></textarea>
-						</div>
-						<button type="submit" class="btn btn-lm">Send me a message</button>
-					</form>
-					<div class="alert alert-light m-3" role="alert" id="mail-alert" style="display: none;"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="main-section" id="disco">
+	<section class="main-section bg-dark" id="disco">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm">
 					<h2 class="text-xl-end" id="headline-disco">Discography</h2>
-<p class="text-xl-end text-justify">Click the cover to open the player to listen to the release.
+<p class="text-xl-end text-justify text-light">Click the cover to open the player to listen to the release.
 </p>
 					<div id="discogrid" class="row">
 
@@ -256,6 +222,41 @@
 		</div>
 	</section>
 
+	<section class="main-section" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<h2 class="text-left" id="headline-contact">Contact</h2>
+				</div>
+				<div id="msg_success" class="alert alert-success d-none" role="alert">
+					Your Message has been sent
+				</div>
+	
+				<div id="msg_error" class="alert alert-danger d-none" role="alert">
+					error send you message
+				</div>
+				<div class="col-sm">
+	
+					<form id="contactform" name="contact-form" action="#contact" method="post">
+						<div class="mb-3">
+							<label>Email address</label>
+							<input type="email" class="form-control" name="email" required>
+						</div>
+						<div class="mb-3">
+							<label>Name</label>
+							<input type="text" class="form-control" name="name" required>
+						</div>
+						<div class="mb-3">
+							<label>Message</label>
+							<textarea class="form-control textarea" rows="3" name="message" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-lm">Send me a message</button>
+					</form>
+					<div class="alert alert-light m-3" role="alert" id="mail-alert" style="display: none;"></div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- Footer -->
 	<footer class="mt-auto text-white-50 h-100" id="footer">
@@ -343,8 +344,6 @@
 							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalimpressum" id="InputImpressum">Impressum</a>
 							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modaldatenschutz" id="inputDatenschutz">Datenschutz</a>
 							<a class="nav-link" href="https://tobeworks.de">Made with ❤ by Tobeworks</a>
-
-							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalplayer" id="inputPlayer">Player</a>
 						</nav>
 					</div>
 
