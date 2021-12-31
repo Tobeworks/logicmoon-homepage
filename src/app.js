@@ -5,9 +5,9 @@ import * as bootstrap from "bootstrap";
 
 const initHome = () => {
 
-    ScrollReveal().reveal("h2", { duration: 1800 });
-   // ScrollReveal().reveal(".main-section", { duration: 700 });
-    ScrollReveal().reveal(".grid-item", { duration: 500 });
+  ScrollReveal().reveal("h2", { duration: 1800 });
+  // ScrollReveal().reveal(".main-section", { duration: 700 });
+  ScrollReveal().reveal(".grid-item", { duration: 500 });
   /** Main Cover */
   anime({
     targets: "#topnavi",
@@ -132,26 +132,26 @@ const displayScrollto = () => {
   });
 };
 
-const albums = [{ id: 144584733}];
+
 
 const klickDisco = () => {
   const covers = document.querySelectorAll('.grid-item');
   const modalplayer = document.getElementById('modalplayerframe');
- 
+
 
   let count = 0;
   covers.forEach(element => {
-    if (element.attributes[2].value !== ''){
-      covers[count].addEventListener('click',e =>{
-        console.log(element.attributes[2].value);
+    if (element.attributes[2].value !== '') {
+      covers[count].addEventListener('click', e => {
+
         modalplayer.setAttribute('src', `https://bandcamp.com/EmbeddedPlayer/album=${element.getAttribute('data-release-id')}/size=large/bgcol=000000/linkcol=ffffff/artwork=small/transparent=true/`);
       })
 
       covers[count].classList.add('pointer');
-      covers[count].setAttribute('data-bs-toggle','modal');
+      covers[count].setAttribute('data-bs-toggle', 'modal');
       covers[count].setAttribute('data-bs-target', '#modalplayer');
     }
     count++;
   });
-  
+
 }
