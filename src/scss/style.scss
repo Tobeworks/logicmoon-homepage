@@ -13,21 +13,10 @@
 @import '../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
 @import '../../node_modules/bootstrap/scss/alert';
 
-//@import "helpers";
-// Utilities
-//@import "utilities/api";
 
 $isogridsize:200px;
 $isogridsize-sm:140px;
 $isogridsize-xs:100px;
-
-:root{
-    // --main-dark : #000;
-    // --isogridsize:200px;
-    // --isogridsize-sm:140px;
-    // --isogridsize-xs:100px;
-}
-
 
 html {
     scroll-behavior: smooth;
