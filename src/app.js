@@ -5,9 +5,9 @@ import * as bootstrap from "bootstrap";
 
 const initHome = () => {
 
-  ScrollReveal().reveal("h2", { duration: 1800 });
+  ScrollReveal().reveal("h2", { duration: 2000 });
   // ScrollReveal().reveal(".main-section", { duration: 700 });
-  ScrollReveal().reveal(".grid-item", { duration: 500 });
+  ScrollReveal().reveal(".grid-item", { duration: 1000 });
   /** Main Cover */
   anime({
     targets: "#topnavi",
