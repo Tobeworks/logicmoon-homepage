@@ -1,4 +1,4 @@
 xd-*
 node_modules
-yarn.lock
-public
+dist
+package-lock.json
