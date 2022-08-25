@@ -4,6 +4,8 @@ import { babel } from '@rollup/plugin-babel';
 import scss from 'rollup-plugin-scss';
 import livereload from 'rollup-plugin-livereload';
 import { minifyHTML } from "rollup-plugin-minify-html";
+const html = require('@rollup/plugin-html');
+import copy from 'rollup-plugin-cpy'
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
 const production = !process.env.ROLLUP_WATCH;
@@ -28,16 +30,22 @@ export default {
         minifyHTML({
             targets: [
                 {
-                    src: "public/index.html",
-                    dest: "public/dist/index.html",
+                    src: "index.html",
+                    dest: "public/index.html",
                     minifyOptions: {
-                        collapseWhitespace: true,
+                        collapseWhitespace: false,
                         minifyCSS: true,
                         minifyJS: true,
                         minifyURLs: true
                     }
                 }
-            ]
+            ],
+            minifyOptions: {
+            collapseWhitespace: false,
+            minifyCSS: true,
+            minifyJS: false,
+            minifyURLs: true
+        }
         })
     ]
 };
